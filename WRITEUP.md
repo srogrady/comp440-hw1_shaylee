@@ -1,7 +1,7 @@
 # HW1 writeup
 
-**Name:** XXXX
-**Date:** XXXX
+**Name:** Shaylee
+**Date:** Thursday, Sep 17, 2026
 
 Every placeholder below gets your answer, told to Claude or typed in here yourself. Every number
 you give comes from a script in this repo; say which one. Claude may format tables and figures
