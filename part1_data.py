@@ -34,19 +34,70 @@ No figures are required in Part 1. `WRITEUP.md` takes one interesting thing from
 rule differs from yours, and your two checks.
 """
 
+import pandas as pd
+
 from load_data import load_all
+
+FULL_RATINGS = 32_000_204
 
 
 def part1_data(ratings, tags, movies, links):
-    print("part 1 unimplemented")  # delete this line when you start
-
     print("== (a) how much ==")
+    print(f"ratings.csv: {len(ratings):,} rows")
+    print(f"tags.csv: {len(tags):,} rows")
+    print(f"movies.csv: {len(movies):,} rows")
+    print(f"links.csv: {len(links):,} rows")
+    print(f"distinct users: {ratings['userId'].nunique():,}")
+    print(f"distinct movies: {ratings['movieId'].nunique():,}")
+    share = len(ratings) / FULL_RATINGS
+    print(f"share of all {FULL_RATINGS:,} MovieLens ratings: {share:.4f} ({share * 100:.1f}%)")
 
     print("== (b) spread ==")
+    per_user_ratings = ratings.groupby("userId").size()
+    per_movie_ratings = ratings.groupby("movieId").size()
+    per_user_tags = tags.groupby("userId").size()
+    per_movie_tags = tags.groupby("movieId").size()
+
+    def stats(s, label):
+        print(f"{label}: median {s.median():.1f}, min {s.min()}, max {s.max()}")
+
+    stats(per_user_ratings, "ratings per user")
+    stats(per_movie_ratings, "ratings per movie")
+    stats(per_user_tags, "tag applications per user")
+    stats(per_movie_tags, "tag applications per movie")
+
+    raters = ratings["userId"].unique()
+    taggers = tags["userId"].unique()
+    n_tagging_raters = pd.Index(raters).isin(taggers).sum()
+    print(f"users who rated anything and ever applied a tag: {n_tagging_raters:,} "
+          f"of {len(raters):,} ({n_tagging_raters / len(raters):.4f})")
 
     print("== (c) top tags, two ways ==")
+    by_count = tags.groupby("tag").size().rename("times_added")
+    by_users = tags.groupby("tag")["userId"].nunique().rename("distinct_users")
+    both = pd.concat([by_count, by_users], axis=1)
+
+    print("-- top 20 by times added --")
+    top_by_count = both.sort_values("times_added", ascending=False).head(20)
+    for tag, row in top_by_count.iterrows():
+        print(f"{tag!r}: times_added={row['times_added']}, distinct_users={row['distinct_users']}")
+
+    print("-- top 20 by distinct users --")
+    top_by_users = both.sort_values("distinct_users", ascending=False).head(20)
+    for tag, row in top_by_users.iterrows():
+        print(f"{tag!r}: times_added={row['times_added']}, distinct_users={row['distinct_users']}")
 
     print("== (d) two checks ==")
+    # check 1: share of all 32M ratings this set holds (data/README.md says 15.6%)
+    claimed_share = 0.156
+    print(f"share of 32M ratings: computed {share:.4f} vs claimed {claimed_share:.4f} -> "
+          f"{'MATCH' if abs(share - claimed_share) < 0.001 else 'DIFFER'}")
+
+    # check 2: distinct users who applied a tag (data/README.md says 14,019)
+    claimed_taggers = 14_019
+    n_taggers = tags["userId"].nunique()
+    print(f"distinct tagging users: computed {n_taggers:,} vs claimed {claimed_taggers:,} -> "
+          f"{'MATCH' if n_taggers == claimed_taggers else 'DIFFER'}")
 
 
 if __name__ == "__main__":

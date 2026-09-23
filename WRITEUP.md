@@ -28,13 +28,13 @@ think so.
 
 Code: `part1_data.py`.
 
-**My rule for cutting 32 million ratings to 5 million** (written before reading `data/make_compact.py`)**:** XXXX
+**My rule for cutting 32 million ratings to 5 million** (written before reading `data/make_compact.py`)**:** Find how the ratings (5 stars) are distributed and make sure to keep the same weights as you scale it down proportionally. Ex. If there were a lot of 5 stars or 1 stars in the original 32 mil then those should be the majority of the 5 mil too.
 
-**One rule I considered and rejected, and why:** XXXX
+**One rule I considered and rejected, and why:** I considered doing top ratings, but that would'nt get very much nuance.
 
-**One interesting thing from `data/README.md`:** XXXX
+**One interesting thing from `data/README.md`:** the random sample of non-taggers that finishes up the count.
 
-**How the script's rule differs from mine, and what each keeps that the other drops:** XXXX
+**How the script's rule differs from mine, and what each keeps that the other drops:** It differs because it takes a certain amount of top rated movies and then prioritizes ratings. Mine keeps the weights of ratings so the data still is representative, but the script's rule keeps the most important ratings.
 
 **First check. Which of Claude's numbers, the different route you took, and whether it matched** (one good target: 6 tags are the literal text `NA`, which pandas drops unless told not to)**:** XXXX
 
