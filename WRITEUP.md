@@ -12,17 +12,17 @@ here; the words are yours.
 Give these to Claude before any analysis runs. One sentence each, plus one sentence on why you
 think so.
 
-**(1) A movie you know well, and what its three most-used tags will be:** XXXX
+**(1) A movie you know well, and what its three most-used tags will be:** Tangled, and its three most-used tags will be Disney, Cute, Animated
 
-**(1) Why you think so:** XXXX
+**(1) Why you think so:** those are key identifiers about the movie and how I think about it
 
-**(2) Out of every 100 people who rated movies here, how many ever added a tag?** XXXX
+**(2) Out of every 100 people who rated movies here, how many ever added a tag?** 23
 
-**(2) Why you think so:** XXXX
+**(2) Why you think so:** It is kind of annoying and I wouldn't expect people to go out of their way to do so
 
-**(3) Can one person's tags take over a movie's tag list? Yes or no:** XXXX
+**(3) Can one person's tags take over a movie's tag list? Yes or no:** No
 
-**(3) Why you think so:** XXXX
+**(3) Why you think so:** it should be based off of tag repetition
 
 ## Part 1. Whose data is this?
 
