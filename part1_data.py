@@ -34,9 +34,12 @@ No figures are required in Part 1. `WRITEUP.md` takes one interesting thing from
 rule differs from yours, and your two checks.
 """
 
+import gzip
+import re
+
 import pandas as pd
 
-from load_data import load_all
+from load_data import DATA, load_all
 
 FULL_RATINGS = 32_000_204
 
@@ -88,16 +91,21 @@ def part1_data(ratings, tags, movies, links):
         print(f"{tag!r}: times_added={row['times_added']}, distinct_users={row['distinct_users']}")
 
     print("== (d) two checks ==")
-    # check 1: share of all 32M ratings this set holds (data/README.md says 15.6%)
-    claimed_share = 0.156
-    print(f"share of 32M ratings: computed {share:.4f} vs claimed {claimed_share:.4f} -> "
-          f"{'MATCH' if abs(share - claimed_share) < 0.001 else 'DIFFER'}")
-
-    # check 2: distinct users who applied a tag (data/README.md says 14,019)
+    # check 1: distinct users who applied a tag (data/README.md says 14,019),
+    # re-derived by grouping tag rows by userId and counting the groups
     claimed_taggers = 14_019
-    n_taggers = tags["userId"].nunique()
-    print(f"distinct tagging users: computed {n_taggers:,} vs claimed {claimed_taggers:,} -> "
-          f"{'MATCH' if n_taggers == claimed_taggers else 'DIFFER'}")
+    n_taggers_grouped = tags.groupby("userId").ngroups
+    print(f"distinct tagging users: groupby groups {n_taggers_grouped:,} vs README {claimed_taggers:,} -> "
+          f"{'MATCH' if n_taggers_grouped == claimed_taggers else 'DIFFER'}")
+
+    # check 2: tag rows whose text is literally NA (load_data.py says 6),
+    # re-derived by searching the raw text of the file, grep-style, with no CSV parser
+    claimed_na = 6
+    na_line = re.compile(r'^\d+,\d+,"?NA"?,\d+$')
+    with gzip.open(DATA / "tags.csv.gz", "rt", encoding="utf-8") as f:
+        n_na_raw = sum(1 for line in f if na_line.match(line.rstrip("\n")))
+    print(f"tag rows that are literally NA: raw text search {n_na_raw:,} vs claimed {claimed_na:,} -> "
+          f"{'MATCH' if n_na_raw == claimed_na else 'DIFFER'}")
 
 
 if __name__ == "__main__":

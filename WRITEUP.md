@@ -36,9 +36,9 @@ Code: `part1_data.py`.
 
 **How the script's rule differs from mine, and what each keeps that the other drops:** It differs because it takes a certain amount of top rated movies and then prioritizes ratings. Mine keeps the weights of ratings so the data still is representative, but the script's rule keeps the most important ratings.
 
-**First check. Which of Claude's numbers, the different route you took, and whether it matched** (one good target: 6 tags are the literal text `NA`, which pandas drops unless told not to)**:** XXXX
+**First check. Which of Claude's numbers, the different route you took, and whether it matched** (one good target: 6 tags are the literal text `NA`, which pandas drops unless told not to)**:** I checked the number of taggers by grouping them by their userids and then count the number of counts and it ended up matching which 14,019 taggers using the data from part1_data.py
 
-**Second check. Which of Claude's numbers, the different route you took, and whether it matched:** XXXX
+**Second check. Which of Claude's numbers, the different route you took, and whether it matched:** I checked the number of tags that are NA's by search the raw text for "NA" values exactly, and it matched with finding 6 values even though I thought it may not match because of values like "na" or "N/A"
 
 ## Part 2. What tags best describe a movie?
 
