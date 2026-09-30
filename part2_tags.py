@@ -83,15 +83,84 @@ and what it must write:
         disagreements mean, is your paragraph in `WRITEUP.md`.
 """
 
+import matplotlib
+
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import pandas as pd
+from pathlib import Path
+
 from load_data import load_all
+
+MY_MOVIE = 104  # Happy Gilmore (1996), the movie I claimed for Part 2
 
 
 def part2_tags(ratings, tags, movies, links):
-    print("part 2 unimplemented")  # delete this line when you start
-
     print("== (1) the obvious answer ==")
+    title = movies.set_index("movieId").loc[MY_MOVIE, "title"]
+    my_tags = tags[tags["movieId"] == MY_MOVIE]
+    print(f"{title}: {(ratings['movieId'] == MY_MOVIE).sum():,} ratings, "
+          f"{len(my_tags):,} tag applications")
+    # raw strings, exactly as typed: `Underdog` and `underdog` are separate rows here
+    for tag, n in my_tags["tag"].value_counts().items():
+        print(f"{n:4d}  {tag!r}")
 
     print("== (2) up close ==")
+    # the figure: tag applications and ratings per year, two panels on a shared year axis
+    my_ratings = ratings[ratings["movieId"] == MY_MOVIE]
+    tag_years = pd.to_datetime(my_tags["timestamp"], unit="s").dt.year.value_counts().sort_index()
+    rating_years = pd.to_datetime(my_ratings["timestamp"], unit="s").dt.year.value_counts().sort_index()
+    years = range(min(tag_years.index.min(), rating_years.index.min()),
+                  max(tag_years.index.max(), rating_years.index.max()) + 1)
+    per_year = pd.DataFrame({"tag_applications": tag_years, "ratings": rating_years}).reindex(years, fill_value=0)
+    per_year = per_year.fillna(0).astype(int)
+    print("-- per year, the numbers behind figures/part2_when.png --")
+    print(per_year.to_string())
+
+    fig, (ax_t, ax_r) = plt.subplots(2, 1, sharex=True, figsize=(9, 6))
+    ax_t.bar(per_year.index, per_year["tag_applications"], color="#2a78d6", width=0.8)
+    ax_t.set_ylabel("tag applications per year")
+    ax_r.bar(per_year.index, per_year["ratings"], color="#eb6834", width=0.8)
+    ax_r.set_ylabel("ratings per year")
+    ax_r.set_xlabel("year")
+    for ax in (ax_t, ax_r):
+        ax.spines[["top", "right"]].set_visible(False)
+        ax.grid(axis="y", color="#e0dfdb", linewidth=0.8)
+        ax.set_axisbelow(True)
+    fig.suptitle(f"{title}: when did its tags and its ratings arrive?")
+    fig.text(0.5, 0.005, "Top: tag applications per year. Bottom: ratings per year. "
+             "Separate y-scales, shared year axis.", ha="center", fontsize=9, color="#52514e")
+    fig.tight_layout(rect=(0, 0.03, 1, 1))
+    Path("figures").mkdir(exist_ok=True)
+    fig.savefig("figures/part2_when.png", dpi=150)
+    plt.close(fig)
+    print("wrote figures/part2_when.png")
+
+    # table 1: who added each tag. Every tagger of the movie, most applications first,
+    # with their own rating of the movie (blank if they tagged it without rating it)
+    my_rating_by_user = my_ratings.groupby("userId")["rating"].last()
+    taggers = my_tags.groupby("userId").agg(tag_applications=("tag", "size"),
+                                             distinct_tags=("tag", "nunique"))
+    taggers["share_of_movie"] = (taggers["tag_applications"] / len(my_tags)).round(3)
+    taggers["their_rating"] = my_rating_by_user.reindex(taggers.index)
+    taggers = taggers.sort_values("tag_applications", ascending=False)
+    print(f"-- who added each tag: {len(taggers):,} taggers, most applications first --")
+    print(taggers.to_string())
+
+    # table 2: how the taggers rated it. For each of the ten most-used raw tag strings,
+    # the ratings of the movie by people who applied that tag vs by every other rater
+    top_ten = my_tags["tag"].value_counts().head(10).index
+    rows = []
+    for tag in top_ten:
+        appliers = my_tags.loc[my_tags["tag"] == tag, "userId"].unique()
+        rated = my_rating_by_user.index.isin(appliers)
+        rows.append({"tag": tag, "appliers": len(appliers),
+                     "appliers_who_rated": int(rated.sum()),
+                     "appliers_mean_rating": round(my_rating_by_user[rated].mean(), 2),
+                     "everyone_else_n": int((~rated).sum()),
+                     "everyone_else_mean_rating": round(my_rating_by_user[~rated].mean(), 2)})
+    print("-- how the taggers rated it: ten most-used raw tag strings --")
+    print(pd.DataFrame(rows).to_string(index=False))
 
     print("== (3) my definition ==")
 

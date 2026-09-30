@@ -46,7 +46,7 @@ Code: `part2_tags.py`.
 
 **My movie, and why I picked it:** XXXX
 
-**Its most misleading tag in the count-ordered list, and why it misleads:** XXXX
+**Its most misleading tag in the count-ordered list, and why it misleads:** the underdog and Underdog was misleading. It is misleading because the only difference between the two is that the first letter is capitalized in one case and not in the other. So, how do you know which one to tag when it is only a writing style difference.
 
 **What I learned about how MovieLens collects ratings and tags, from rating and tagging my movie myself (about 100 words):** XXXX
 
@@ -55,12 +55,12 @@ Code: `part2_tags.py`.
 One sentence on the figure written before you saw it and one after. The two tables are where the
 details below come from. Say which script made them.
 
-**The figure, when the tags and the ratings arrived. What I expected:** XXXX
-**The figure, what it shows:** XXXX
+**The figure, when the tags and the ratings arrived. What I expected:** i think the higher the ratings the more the tags
+**The figure, what it shows:** The figure shows that it took about 10 years of ratings to get it to start being tagged into categories. It also shows that tagging may have been trending during 2011 or so when number of new ratings was lower. After 2010 both ratings and tagging is happening pretty consistantly.
 
-**Two interesting details I learned up close that the counts did not show:** XXXX
+**Two interesting details I learned up close that the counts did not show:** One interesting detail is that the top two tag contributors have two really high movie ratings, and also the mean ratings of taggers are around 3 and 4
 
-**Anything up close that contradicted something I had already written down. Which one, what the data showed, and what you now think. Or "nothing yet":** XXXX
+**Anything up close that contradicted something I had already written down. Which one, what the data showed, and what you now think. Or "nothing yet":** yeah it didn't prove that the people who tagged the most rated the movie high beside sthe first top two
 
 ### My definition
 
@@ -86,7 +86,7 @@ XXXX
 
 **My own order of the ten most-used tags, written before looking at any data: my movie from step 1, then my nine others from step 4:**
 
-XXXX
+104: comedy, Adam Sandler, funny, golf, sports, Underdog, underdog, Bob Barker, seen more than once, goofy
 
 **One criterion I considered for the judge and rejected, and why** (the one I used is in `judge/criterion.md`)**:** XXXX
 
