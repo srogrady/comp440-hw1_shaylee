@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: ba17aad2-4ccb-4fe4-802b-6f254d2052c2 | 2026-09-30T19:17:02.626Z -->
 ## Session `ba17aad2` — 2026-09-30 19:17:02
 
-*12 user turns. Tool outputs and reasoning omitted.*
+*13 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 lets continue homework1
@@ -190,5 +190,98 @@ yes
 - 🔧 `Skill` — checkpoint
 - 🔧 `Bash` — Run the full check script
 - 🔧 `Read` — /Users/shayleeogrady/Documents/macalester/fall 2026/collective intell/comp440-hw1_shaylee/WRITEUP.md
+- 🔧 `Bash` — Write this session into the transcript file
+Here is where the Part 1 checkpoint stands.
+
+**1. `run_all.py`**, full output:
+
+```
+5,000,030 ratings, 1,244,210 tag applications, 4,000 movies, 23,443 users
+== (a) how much ==
+ratings.csv: 5,000,030 rows
+tags.csv: 1,244,210 rows
+movies.csv: 4,000 rows
+links.csv: 4,000 rows
+distinct users: 23,443
+distinct movies: 4,000
+share of all 32,000,204 MovieLens ratings: 0.1562 (15.6%)
+== (b) spread ==
+ratings per user: median 103.0, min 20, max 3241
+ratings per movie: median 685.0, min 83, max 14777
+tag applications per user: median 5.0, min 1, max 287198
+tag applications per movie: median 158.0, min 2, max 6688
+users who rated anything and ever applied a tag: 14,019 of 23,443 (0.5980)
+== (c) top tags, two ways ==
+-- top 20 by times added --
+'sci-fi': times_added=10075, distinct_users=2566
+'atmospheric': times_added=8592, distinct_users=2051
+'action': times_added=7444, distinct_users=1744
+'visually appealing': times_added=6585, distinct_users=1989
+'comedy': times_added=6556, distinct_users=1727
+'funny': times_added=6351, distinct_users=1795
+'surreal': times_added=6081, distinct_users=1902
+'twist ending': times_added=5985, distinct_users=1988
+'thought-provoking': times_added=5591, distinct_users=1956
+'dark comedy': times_added=5132, distinct_users=1811
+'dystopia': times_added=5090, distinct_users=1512
+'based on a book': times_added=5026, distinct_users=1096
+'stylized': times_added=4519, distinct_users=1317
+'cinematography': times_added=4492, distinct_users=1405
+'psychology': times_added=4462, distinct_users=1591
+'social commentary': times_added=4397, distinct_users=1432
+'classic': times_added=4281, distinct_users=1448
+'fantasy': times_added=4279, distinct_users=1366
+'quirky': times_added=4191, distinct_users=1337
+'dark': times_added=4079, distinct_users=1365
+-- top 20 by distinct users --
+'sci-fi': times_added=10075, distinct_users=2566
+'atmospheric': times_added=8592, distinct_users=2051
+'visually appealing': times_added=6585, distinct_users=1989
+'twist ending': times_added=5985, distinct_users=1988
+'thought-provoking': times_added=5591, distinct_users=1956
+'surreal': times_added=6081, distinct_users=1902
+'dark comedy': times_added=5132, distinct_users=1811
+'funny': times_added=6351, distinct_users=1795
+'action': times_added=7444, distinct_users=1744
+'comedy': times_added=6556, distinct_users=1727
+'psychology': times_added=4462, distinct_users=1591
+'dystopia': times_added=5090, distinct_users=1512
+'classic': times_added=4281, distinct_users=1448
+'great soundtrack': times_added=3612, distinct_users=1446
+'social commentary': times_added=4397, distinct_users=1432
+'cinematography': times_added=4492, distinct_users=1405
+'time travel': times_added=3697, distinct_users=1390
+'fantasy': times_added=4279, distinct_users=1366
+'dark': times_added=4079, distinct_users=1365
+'psychological': times_added=3479, distinct_users=1339
+== (d) two checks ==
+distinct tagging users: groupby groups 14,019 vs README 14,019 -> MATCH
+tag rows that are literally NA: raw text search 6 vs claimed 6 -> MATCH
+part 2 unimplemented
+...
+== what is missing ==
+  part 2: not started (part2_tags.py).
+  part 3: not started (part3_users.py).
+  part 2: not started, 26 slots still XXXX.
+  Predictions revisited: not started, 1 slot still XXXX.
+  part 3: not started, 9 slots still XXXX.
+  part 4: not started, 7 slots still XXXX.
+  nothing in a part you have reached.
+
+0 missing in the parts you have reached.
+```
+
+(I cut the Part 2 and Part 3 stubs, which only say "unimplemented".)
+
+**2. `WRITEUP.md`:** No Part 1 slot is still `XXXX`, and each decision slot has its why filled in.
+
+One contradiction: section (b) says 14,019 of 23,443 raters applied a tag. That contradicts your Part 0 prediction (2), which said 23 out of 100. The "Predictions revisited" slot collects that later.
+
+**3. Transcript:** `1 session(s) found; this session in TRANSCRIPT.md: yes.`
+
+**Are you ready for me to commit this as `Part 1 done`?**
+
+**User:**
+yes
 
 <!-- end-session: ba17aad2-4ccb-4fe4-802b-6f254d2052c2 -->
