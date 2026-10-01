@@ -1,0 +1,552 @@
+id,tag,rating
+1248,action,2
+1248,boring,1
+1248,comedy,2
+1248,funny,2
+1248,sci-fi,2
+2194,atmospheric,3
+2194,based on a book,2
+2194,classic,2
+2194,drama,1
+2194,imdb top 250,2
+2194,post-apocalyptic,5
+2294,cinematography,3
+2294,drama,2
+2294,imdb top 250,3
+2294,overrated,3
+2294,simulated reality,5
+2294,thought-provoking,4
+7038,atmospheric,3
+7038,classic,3
+7038,comedy,3
+7038,funny,3
+7038,imdb top 250,3
+7038,love,1
+10744,action,3
+10744,adventure,3
+10744,bechdel test:fail,2
+10744,fantasy,3
+10744,funny,3
+10744,superhero,3
+13394,action,3
+13394,atmospheric,3
+13394,imdb top 250,2
+13394,predictable,2
+13394,sci-fi,5
+18021,action,2
+18021,classic,2
+18021,comedy,2
+18021,funny,2
+18021,imdb top 250,2
+27307,action,2
+27307,atmospheric,2
+27307,classic,2
+27307,imdb top 250,2
+27307,incest,5
+27307,sci-fi,2
+27618,adventure,2
+27618,comedy,2
+27618,funny,2
+27618,imdb top 250,2
+27618,overrated,2
+30082,action,3
+30082,atmospheric,3
+30082,based on a book,3
+30082,can see 100 times no bore at all,2
+30082,drama,3
+30082,imdb top 250,3
+30638,based on a book,4
+30638,comedy,2
+30638,drama,2
+30638,funny,2
+30638,imdb top 250,4
+30662,action,2
+30662,atmospheric,2
+30662,drama,2
+30662,imdb top 250,2
+30662,violence,2
+30810,action,1
+30810,based on a book,1
+30810,boring,1
+30810,fantasy,1
+30810,magic,1
+30810,space,1
+34472,action,4
+34472,brad pitt,2
+34472,comedy,3
+34472,funny,3
+34472,imdb top 250,2
+34472,violence,4
+38602,action,2
+38602,adventure,2
+38602,funny,2
+38602,predictable,2
+38602,sci-fi,2
+40667,action,3
+40667,atmospheric,4
+40667,cinematography,4
+40667,drama,2
+40667,imdb top 250,2
+41044,action,3
+41044,adventure,3
+41044,anti-hero,3
+41044,epic,3
+41044,fantasy,3
+41044,sci-fi,3
+43778,based on a book,2
+43778,boring,1
+43778,corruption,4
+43778,dark comedy,3
+43778,politics,5
+43778,social commentary,5
+44467,adventure,3
+44467,atmospheric,3
+44467,boring,2
+44467,drama,3
+44467,imdb top 250,3
+44467,violence,3
+44949,action,3
+44949,based on a book,3
+44949,classic,3
+44949,drama,2
+44949,imdb top 250,3
+44949,organized crime,5
+45273,crime,4
+45273,imdb top 250,3
+45273,overrated,2
+45273,thriller,4
+45273,twist ending,5
+45273,violence,3
+47745,a24,3
+47745,atmospheric,3
+47745,cinematography,3
+47745,drama,2
+47745,imdb top 250,3
+47745,violence,3
+49813,action,3
+49813,classic,2
+49813,comedy,3
+49813,funny,2
+49813,imdb top 250,1
+49813,romance,2
+53819,action,3
+53819,atmospheric,4
+53819,dystopia,5
+53819,imdb top 250,2
+53819,sci-fi,4
+53819,violence,3
+53833,atmospheric,4
+53833,boring,2
+53833,dark,4
+53833,imdb top 250,3
+53833,psychology,4
+53833,surreal,4
+54664,atmospheric,5
+54664,boring,1
+54664,cinematography,4
+54664,dark,4
+54664,visually appealing,4
+56780,atmospheric,4
+56780,based on a book,3
+56780,drama,3
+56780,imdb top 250,2
+56780,philosophical,5
+56780,predictable,2
+57474,action,2
+57474,based on a book,2
+57474,cinematography,3
+57474,drama,2
+57474,imdb top 250,3
+57474,peter o'toole,2
+57936,classic,2
+57936,comedy,2
+57936,great soundtrack,2
+57936,imdb top 250,2
+57936,rescue,2
+57936,twist ending,2
+59636,action,4
+59636,adventure,3
+59636,classic,2
+59636,epic,3
+59636,humorous action,5
+59636,imdb top 250,2
+60097,action,3
+60097,assassination,3
+60097,atmospheric,2
+60097,boring,1
+60097,classic,2
+60097,imdb top 250,2
+61500,atmospheric,3
+61500,classic,3
+61500,drama,3
+61500,great acting,3
+61500,imdb top 250,3
+61500,violence,3
+62067,action,2
+62067,adventure,2
+62067,based on a book,1
+62067,espionage,3
+62067,superhero,2
+62214,crime,3
+62214,drama,4
+62214,funny,2
+62214,imdb top 250,4
+62214,violence,3
+63098,action,3
+63098,based on a book,3
+63098,detective,5
+63098,drama,3
+63098,overrated,2
+63098,thought-provoking,3
+64452,action,3
+64452,drama,2
+64452,funny,2
+64452,heroes,2
+64452,imdb top 250,2
+64452,sci-fi,3
+64659,action,2
+64659,atmospheric,3
+64659,drama,1
+64659,dystopia,5
+64659,imdb top 250,2
+64659,sci-fi,4
+72365,action,2
+72365,adventure,2
+72365,drama,2
+72365,fantasy,2
+72365,predictable,2
+72871,action,3
+72871,atmospheric,3
+72871,classic,3
+72871,comedy,3
+72871,funny,3
+73347,classic,3
+73347,comedy,3
+73347,family,3
+73347,funny,3
+73347,romance,5
+74773,action,2
+74773,comedy,2
+74773,funny,2
+74773,imdb top 250,2
+74773,sci-fi,2
+75549,classic,3
+75549,comedy,3
+75549,computer animation,3
+75549,disney,4
+75549,fantasy,3
+75549,romance,3
+75717,action,2
+75717,adventure,2
+75717,comedy,2
+75717,funny,2
+75717,sci-fi,2
+76426,distorted reality,5
+76426,drama,1
+76426,imdb top 250,2
+76426,overrated,2
+76426,thriller,2
+76426,violence,2
+77025,action,4
+77025,based on a book,4
+77025,drama,3
+77025,fantasy,4
+77025,sci-fi,4
+77785,action,5
+77785,based on a book,2
+77785,comedy,2
+77785,funny,2
+77785,violence,3
+78270,action,4
+78270,imdb top 250,2
+78270,overrated,2
+78270,sci-fi,4
+78270,thriller,4
+82429,action,2
+82429,drama,2
+82429,funny,3
+82429,imdb top 250,3
+82429,overrated,4
+82895,chick flick,4
+82895,classic,2
+82895,comedy,3
+82895,funny,3
+82895,romance,4
+82895,the most touching,3
+84302,atmospheric,3
+84302,based on a book,3
+84302,classic,3
+84302,dark,3
+84302,imdb top 250,3
+84302,inspirational,3
+84422,action,5
+84422,comedy,3
+84422,funny,3
+84422,sci-fi,3
+84422,violence,4
+84960,action,4
+84960,drama,2
+84960,imdb top 250,2
+84960,psychology,2
+84960,romance,2
+86775,action,2
+86775,atmospheric,5
+86775,classic,2
+86775,drama,2
+86775,imdb top 250,2
+87002,action,2
+87002,comedy,2
+87002,funny,2
+87002,imdb top 250,2
+87002,philosophy,5
+87002,sci-fi,2
+88238,comedy,2
+88238,drama,2
+88238,funny,2
+88238,imdb top 250,2
+88238,violence,3
+88451,action,4
+88451,classic,2
+88451,comedy,3
+88451,funny,3
+88451,imdb top 250,2
+89513,animation,3
+89513,comedy,3
+89513,drama,3
+89513,funny,3
+89513,imdb top 250,3
+89513,plot twist,3
+92206,based on a book,2
+92206,classic,2
+92206,drama,1
+92206,gun fight,3
+92206,imdb top 250,2
+92206,overrated,2
+93416,action,2
+93416,adventure,2
+93416,based on a book,4
+93416,comedy,2
+93416,funny,2
+94228,action,3
+94228,atmospheric,4
+94228,classic,3
+94228,horror,5
+94228,imdb top 250,2
+94228,violence,4
+95043,atmospheric,3
+95043,based on a book,2
+95043,drama,3
+95043,horror,5
+95043,imdb top 250,2
+95043,romance,2
+95212,atmospheric,3
+95212,cinematography,3
+95212,disturbing,3
+95212,imdb top 250,2
+95212,overrated,2
+95212,surreal,3
+95758,comedy,3
+95758,drama,2
+95758,funny,3
+95758,imdb top 250,2
+95758,trey parker,2
+95758,violence,2
+95947,action,3
+95947,atmospheric,3
+95947,predictable,3
+95947,sci-fi,3
+95947,violence,3
+97462,action,2
+97462,atmospheric,2
+97462,boring,2
+97462,ensemble cast,2
+97462,imdb top 250,2
+98859,atmospheric,2
+98859,based on a book,2
+98859,drama,2
+98859,imdb top 250,2
+98859,violence,2
+101430,atmospheric,4
+101430,based on a book,2
+101430,classic,3
+101430,hitchcock at his best,5
+101430,imdb top 250,3
+101430,stylized,3
+104715,action,2
+104715,adventure,2
+104715,based on a book,2
+104715,fantasy,2
+104715,sci-fi,2
+105490,action,3
+105490,doyouspeakit,2
+105490,drama,3
+105490,imdb top 250,3
+105490,overrated,3
+105490,violence,3
+106508,based on a book,2
+106508,classic,2
+106508,dark,2
+106508,drama,2
+106508,funny,2
+106508,imdb top 250,2
+106551,atmospheric,3
+106551,based on a book,5
+106551,drama,2
+106551,imdb top 250,2
+106551,surreal,3
+106583,action,2
+106583,adventure,2
+106583,classic,2
+106583,fantasy,2
+106583,sci-fi,2
+106982,action,1
+106982,adventure,1
+106982,classic,1
+106982,funny,1
+106982,sci-fi,1
+108431,action,2
+108431,cinematography,2
+108431,imdb top 250,2
+108431,violence,1
+108431,visually appealing,2
+108525,action,4
+108525,based on a book,3
+108525,drama,3
+108525,most common tag that user uses: action,1
+108525,sci-fi,4
+108525,thought-provoking,3
+108999,action,3
+108999,atmospheric,4
+108999,classic,3
+108999,dark,4
+108999,dystopia,5
+108999,imdb top 250,3
+109138,action,3
+109138,funny,3
+109138,imdb top 250,2
+109138,overrated,2
+109138,redemption,5
+109138,violence,3
+109920,action,2
+109920,based on a book,2
+109920,based on a true story,3
+109920,drama,2
+109920,mafia,5
+109920,true story,3
+111412,atmospheric,4
+111412,bittersweet,4
+111412,classic,3
+111412,drama,2
+111412,imdb top 250,3
+111412,mtv feature,2
+112192,action,1
+112192,based on a book,2
+112192,drama,1
+112192,funny,1
+112192,imdb top 250,2
+112192,thoughtful sci-fi,5
+114090,atmospheric,3
+114090,classic,3
+114090,cult film,3
+114090,great soundtrack,3
+114090,imdb top 250,3
+114090,rock movies,3
+121941,action,3
+121941,atmospheric,3
+121941,boring,1
+121941,fantasy,4
+121941,imdb top 250,2
+121941,stylized,3
+127463,atmospheric,2
+127463,classic,2
+127463,drama,2
+127463,imdb top 250,2
+127463,steve mcqueen,2
+127463,violence,2
+131761,anime,3
+131761,atmospheric,3
+131761,classic,3
+131761,dark,3
+131761,imdb top 250,2
+131761,sci-fi,3
+135399,action,3
+135399,based on a book,3
+135399,drama,3
+135399,imdb top 250,2
+135399,thriller,5
+136522,action,3
+136522,based on a book,2
+136522,comedy,2
+136522,funny,2
+136522,sci-fi,2
+138786,action,2
+138786,and this isn't at all how i pictured most of the characters,1
+138786,atmospheric,3
+138786,classic,2
+138786,comedy,2
+138786,imdb top 250,2
+142402,action,2
+142402,drama,2
+142402,imdb top 250,2
+142402,overrated,2
+142402,violence,2
+143964,atmospheric,2
+143964,based on a book,2
+143964,classic,5
+143964,drama,2
+143964,imdb top 250,3
+145184,classic,5
+145184,comedy,2
+145184,drama,3
+145184,great acting,3
+145184,imdb top 250,4
+145184,violence,2
+146656,best movie,2
+146656,drama,3
+146656,great acting,3
+146656,imdb top 250,3
+146656,thought-provoking,3
+146656,true story,3
+148593,action,3
+148593,atmospheric,4
+148593,classic,4
+148593,crime,5
+148593,imdb top 250,2
+148593,stylized,4
+153407,action,3
+153407,atmospheric,3
+153407,drama,3
+153407,imdb top 250,3
+153407,strong female lead,5
+153407,violence,3
+153529,action,2
+153529,atmospheric,3
+153529,classic,3
+153529,drama,2
+153529,french,3
+153529,imdb top 250,2
+153690,action,5
+153690,based on a book,2
+153690,classic,1
+153690,comedy,3
+153690,funny,3
+155572,atmospheric,2
+155572,based on a book,3
+155572,drama,2
+155572,good acting,1
+155572,great soundtrack,2
+155572,kate winslet,3
+160695,action,3
+160695,adventure,3
+160695,based on a book,3
+160695,comedy,3
+160695,funny,3
+162196,action,2
+162196,atmospheric,2
+162196,drama,2
+162196,imdb top 250,2
+162196,predictable,2
+162220,action,2
+162220,adventure,3
+162220,classic,4
+162220,overrated,4

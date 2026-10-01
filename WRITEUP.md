@@ -162,39 +162,60 @@ and no numbering, the movieId first and the rating last, as in `296, Pulp Fictio
 
 **My 20 ratings:**
 
-XXXX
+104, Happy Gilmore (1996), 4.5
+106696, Frozen (2013), 4
+91500, The Hunger Games (2012), 4.5
+96588, Pitch Perfect (2012), 4
+45720, Devil Wears Prada, The (2006), 5
+4447, Legally Blonde (2001), 4.5
+7451, Mean Girls (2004), 4
+1, Toy Story (1995), 5
+6377, Finding Nemo (2003), 4.5
+134853, Inside Out (2015), 4.5
+2059, Parent Trap, The (1998), 4
+60397, Mamma Mia! (2008), 4.5
+1721, Titanic (1997), 4
+8533, Notebook, The (2004), 4
+4306, Shrek (2001), 5
+4886, Monsters, Inc. (2001), 4.5
+203222, The Lion King (2019), 5
+2572, 10 Things I Hate About You (1999), 4.5
+195159, Spider-Man: Into the Spider-Verse (2018), 4.5
+39, Clueless (1995), 4
 
 **My `score(user, tag)`, in a sentence, and why I started there (about 100 words):**
 
-XXXX
+My score takes the movies I like and uses their tags to find what kind of tags I appreciate with movies from the movies I rank high/like. I started with it because if I like a movie then that movies tells a little something about me
 
 **What my score says about me: my top ten tags, and whether they describe my taste (about 100 words):**
 
-XXXX
+`part3_users.py` (2): comedy 13, funny 12, coming of age 9, disney 8, animation 7, romance 7, chick flick 6, classic 6, friendship 6, based on a book 5
+
+Yes they hoenstly are spot on especially the comedy, and coming of age, and classic, and friendship
 
 **What my user viewer shows and why I chose that (about 100 words):**
 
-XXXX
+My user viewer shows that my top tag is comedy with a score of 13. The five movies displayed are The Devil Wears Prada, Shrek, The Lion King, Toy Story, and 10 Things I Hate About You, which are all among my highest-rated movies. I chose to show a user's top tag and their top five movies because it gives a quick summary of their movie preferences. The top tag highlights the genre or theme most associated with their ratings, while the movie list provides specific examples of what they enjoy. Together, these make it easy to understand a user's tastes at a glance and compare them with other users.
 
 **What I put in the description column for a person, and why (about 150 words):**
 
-XXXX
+I described each person by their most-used tag because it is the clearest and most representative summary of their movie preferences. It appears most often in their taggings and provides a simple, consistent description for the judge to evaluate.
 
 **My criterion for people: what it asks the judge to do that the movie criterion did not (about 60 words):**
 
-XXXX
+The people criterion asks the judge to evaluate how well a tag describes a person's overall movie taste, not just whether it describes a movie. Unlike the movie criterion, it emphasizes tags that are representative and distinctive about/for the user while avoiding overly broad tags that could apply to many different people.
 
 **The user-tag pairs I chose to judge, how many, and why those (about 100 words):**
 
-XXXX
+I chose 100 random users to get a sample that was big enough to evalute but still practical to judge. For each user I selected their top five tags under my scoring function because those are the tags the algoritm beleived best described that person's movie taste. This produced 495 user tag pairs and gave a wide range of users and tag types. The goal was to test whether the highest scoring tags actualy matched users preferences and whether the scoring could find descriptive and distintive tags.
 
 **Improvement 1: what I changed in the scoring function, what the judge and the viewer showed before and after (about 150 words):**
 
-XXXX
+I changed the score so popular tags are penalized and tags must appear in at least 3 of a user's movies. Before, broad tags like action and comedy often dominated because they appeared frequently. After the change, more specific tags gained higher scores when they still represented a meaningful portion of the user's movies. In the viewer, users were described by tags that better reflected their unique preferences rather than only broad genres. The judge results suggested the descriptions became more informative and distinctive while still covering enough movies to be representative.
 
 **Improvement 2: the same (about 150 words):**
 
-XXXX
+Next, increase the penalty on extremely common tags even more by comparing how concentrated a tag is within one user's ratings versus across all users. The results still show many users with top tags such as action or comedy, which suggests broad tags remain competitive. This change would further reward tags that distinguish one user's tastes from others and make the viewer descriptions more personalized. the viewer originally showed many more top tags such as action, and after the improvements some of those tags are entirely gone and replaced with new ones like wagner moura
 
 ## Part 4. Working with Claude
 

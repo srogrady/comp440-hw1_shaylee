@@ -89,18 +89,109 @@ def add_me(ratings: pd.DataFrame, mine: pd.DataFrame) -> pd.DataFrame:
 
 # ------------------------------------------------------------------- yours to write ---
 
-def score(ratings: pd.DataFrame, tags: pd.DataFrame, movies: pd.DataFrame):
-    """What tags best describe a user. This one is yours; the handout's Part 3, step 2.
+def clean_tag(tag):
+    """My merge rule from Part 2: one tag when the strings match after stripping leading and
+    trailing spaces and lowercasing."""
+    return tag.strip().lower()
 
-    Return one row per user-tag pair: userId, tag, score, higher meaning the tag describes
-    the user better. Start simply, test it on your own ratings, and improve it twice with
-    what your viewer and your judge show you."""
-    print("score(user, tag) is yours to write")
+
+def score_v0(ratings: pd.DataFrame, tags: pd.DataFrame, movies: pd.DataFrame):
+    """My first score(user, tag), kept for before-and-after: how many of the movies the user rated 4 or higher carry that tag
+    at least 3 times, counted after my merge rule. Higher means the tag describes the user
+    better. Vectorized: one merge of liked ratings onto qualifying movie-tag pairs."""
+    counts = (tags.assign(tag=tags["tag"].map(clean_tag))
+              .groupby(["movieId", "tag"]).size().rename("count").reset_index())
+    fits = counts[counts["count"] >= 3][["movieId", "tag"]]
+    liked = ratings.loc[ratings["rating"] >= 4, ["userId", "movieId"]]
+    pairs = liked.merge(fits, on="movieId")
+    return pairs.groupby(["userId", "tag"]).size().rename("score").reset_index()
+
+
+def score_v1(ratings: pd.DataFrame, tags: pd.DataFrame, movies: pd.DataFrame):
+    """Improvement 1, kept for before-and-after: broad tags are penalised gently.
+    count = score_v0 (the user's 4+ movies carrying the tag 3+ times); a tag needs a count of
+    at least 3; then score = count / sqrt(P), P = number of users with that tag in score_v0."""
+    v0 = score_v0(ratings, tags, movies)
+    popularity = v0.groupby("tag")["userId"].transform("size")
+    out = v0[v0["score"] >= 3].copy()
+    out["score"] = out["score"] / popularity[out.index] ** 0.5
+    return out
+
+
+def score(ratings: pd.DataFrame, tags: pd.DataFrame, movies: pd.DataFrame):
+    """My score(user, tag), improvement 2: improvement 1 times how concentrated the tag is.
+    count = score_v0; the minimum count is now 2;
+    score = count / sqrt(P) * (count / M), P = users with the tag in score_v0,
+    M = all movies carrying the tag 3+ times (after my merge rule)."""
+    v0 = score_v0(ratings, tags, movies)
+    popularity = v0.groupby("tag")["userId"].transform("size")
+    counts = (tags.assign(tag=tags["tag"].map(clean_tag))
+              .groupby(["movieId", "tag"]).size())
+    movies_with_tag = counts[counts >= 3].reset_index().groupby("tag").size()
+    out = v0[v0["score"] >= 2].copy()
+    concentration = out["score"] / out["tag"].map(movies_with_tag)
+    out["score"] = out["score"] / popularity[out.index] ** 0.5 * concentration
+    return out
+
+
+def write_users_csv(scores, tags, path=REPO / "judge" / "users.csv"):
+    """judge/users.csv, as I specified it:
+    people: 100 users who have tagged, drawn at random under seed 440 (I am left out);
+    description: "most common tag that user uses: X", X their most-applied tag after my
+        merge rule, ties broken alphabetically;
+    tags: their top five vocabulary tags under my score(user, tag), ties alphabetical."""
+    vocab = set((REPO / "judge" / "vocabulary.txt").read_text(encoding="utf-8").split("\n")) - {""}
+    taggers = pd.Series(sorted(tags["userId"].unique())).sample(100, random_state=440)
+    own = tags[tags["userId"].isin(taggers)].assign(tag=lambda d: d["tag"].map(clean_tag))
+    own = own.groupby(["userId", "tag"]).size().rename("n").reset_index()
+    most_used = (own.sort_values(["userId", "n", "tag"], ascending=[True, False, True])
+                 .groupby("userId").head(1).set_index("userId")["tag"])
+    top = scores[scores["userId"].isin(taggers) & scores["tag"].isin(vocab)]
+    top = (top.sort_values(["userId", "score", "tag"], ascending=[True, False, True])
+           .groupby("userId").head(5).groupby("userId")["tag"].apply("|".join))
+    rows = pd.DataFrame({"id": sorted(taggers)})
+    rows["description"] = "most common tag that user uses: " + rows["id"].map(most_used)
+    rows["tags"] = rows["id"].map(top).fillna("")
+    rows.to_csv(path, index=False)
+    n_tags = rows["tags"].str.split("|").map(lambda t: len([x for x in t if x]))
+    print(f"wrote judge/users.csv: {len(rows)} people, {int(n_tags.sum())} tag ratings to ask for; "
+          f"people with fewer than 5 tags: {int((n_tags < 5).sum())}")
+    return rows
+
+
+def side_by_side(scores, new_scores=None, path=REPO / "judge" / "ratings_users.csv"):
+    """My score next to the judge's rating on every pair I asked the judge about.
+    A disagreement is measured, per person, as the count of their five tags the judge
+    rated 4 or 5: fewer approved tags means more disagreement."""
+    asked = pd.read_csv(REPO / "judge" / "users.csv", keep_default_na=False)
+    asked = (asked.assign(tag=asked["tags"].str.split("|")).explode("tag")
+             .query("tag != ''")[["id", "tag"]].rename(columns={"id": "userId"}))
+    judged = pd.read_csv(path, keep_default_na=False).rename(columns={"id": "userId"})
+    judged = judged.drop_duplicates(["userId", "tag"])  # the judge keeps the first answer too
+    pairs = (asked.merge(scores, on=["userId", "tag"], how="left")
+             .merge(judged, on=["userId", "tag"], how="left"))
+    extra = len(judged.merge(asked, on=["userId", "tag"], how="left", indicator=True)
+                .query("_merge == 'left_only'"))
+    print(f"pairs asked: {len(asked)}; judged: {int(pairs['rating'].notna().sum())}; "
+          f"judge rows for tags never asked: {extra}")
+    pairs["approved"] = pairs["rating"] >= 4
+    if new_scores is not None:
+        # what moves: the same judged pairs under the current score (blank = dropped by it)
+        pairs = pairs.merge(new_scores.rename(columns={"score": "new_score"}),
+                            on=["userId", "tag"], how="left")
+        print(f"judged pairs the current score still scores: {int(pairs['new_score'].notna().sum())} "
+              f"of {len(pairs)}")
+    per = pairs.groupby("userId").agg(tags=("tag", "size"), approved=("approved", "sum"))
+    print(f"judge-approved tags per person, averaged: {per['approved'].mean():.2f} "
+          f"of {per['tags'].mean():.2f}, over {len(per)} people")
+    print("-- people by approved count, fewest first --")
+    print(per.sort_values(["approved", "tags"]).head(10).to_string())
+    print("-- every pair: my score beside the judge --")
+    print(pairs.sort_values(["userId", "score"], ascending=[True, False]).to_string(index=False))
+    return pairs
 
 
 def part3_users(ratings, tags, movies, links):
-    print("part 3 unimplemented")  # delete this line when you start
-
     print("== (1) my ratings ==")
     mine, skipped = read_my_ratings()
     print(f'{len(mine)} rating(s) read from the "{SLOT}" slot in WRITEUP.md.')
@@ -118,7 +209,25 @@ def part3_users(ratings, tags, movies, links):
         print(f"{len(ratings):,} ratings, none of them yours yet.")
 
     print("== (2) score(user, tag) ==")
-    score(ratings, tags, movies)
+    before = score_v0(ratings, tags, movies)
+    middle = score_v1(ratings, tags, movies)
+    scores = score(ratings, tags, movies)
+    for label, sc in [("first (score_v0)", before), ("improvement 1 (score_v1)", middle),
+                      ("now (score, improvement 2)", scores)]:
+        me = sc[sc["userId"] == ME].sort_values(["score", "tag"], ascending=[False, True])
+        print(f"-- my ten best tags, {label} --")
+        print(me.head(10).to_string(index=False))
+    print(f"score() returned {len(scores):,} rows over {scores['userId'].nunique():,} users")
+
+    print("== (3) judge/users.csv ==")
+    # written once: the judge has rated this file, so a later score() must not rewrite it
+    if (REPO / "judge" / "users.csv").exists():
+        print("judge/users.csv already written and judged; left as it is")
+    else:
+        write_users_csv(before, tags)
+
+    print("== (4) my score beside the judge ==")
+    side_by_side(before, scores)
 
 
 if __name__ == "__main__":
