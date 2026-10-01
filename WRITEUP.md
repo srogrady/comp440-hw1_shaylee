@@ -60,19 +60,19 @@ details below come from. Say which script made them.
 
 **Two interesting details I learned up close that the counts did not show:** One interesting detail is that the top two tag contributors have two really high movie ratings, and also the mean ratings of taggers are around 3 and 4
 
-**Anything up close that contradicted something I had already written down. Which one, what the data showed, and what you now think. Or "nothing yet":** yeah it didn't prove that the people who tagged the most rated the movie high beside sthe first top two
+**Anything up close that contradicted something I had already written down. Which one, what the data showed, and what you now think. Or "nothing yet":** From my original prediction the data didn't completely prove that high ratings are given by highly active taggers. Instead I now think that the ratings are pretty randomly distributed throughout, and the number of tags don't directly correlate to the movie rating.
 
 ### My definition
 
-**My `score(movie, tag)`** (one or two sentences, precise enough that a classmate could code it)**:** XXXX
+**My `score(movie, tag)`** (one or two sentences, precise enough that a classmate could code it)**:** Take the specific tags for one individual movie and the mean count per tag for that movie is the floor for what tags are important then, compare to the most popular tags of all the movies and you want the tags that are most common amoung all the movies, so that it can help you find movies you should watch next or avoid next
 
-**One definition I considered and rejected, and why:** XXXX
+**One definition I considered and rejected, and why:** I considered scoring based on unique tags because those tell you more about a movie, but I decided against it because sometimes they are hard to understand and there are too many unique ones to really show anything about the quality of the tag
 
-**Which tags I merged as the same tag, which I kept apart, and why:** XXXX
+**Which tags I merged as the same tag, which I kept apart, and why:** I merged the tags that were the same just with different letter cases only because then they were saying the same thing. Although there were some weird cases I decided to let those be because there were too many one off cases to track. I also striped leading and trailing spaces.
 
 **Why my definition, in about 150 words. Name one thing it gains and one thing it loses:**
 
-XXXX
+I choose my definition, because I feel like the reason for tagging movies is to describe in short what that movies main characteristics are, and that helps you decide whether or not you want to watch it. A good tag is helpful when you are able to look at a movie that you know you like and read it's tags, and then use those tags to search for a movie with similar ones so that you can find another movie you will like. My score gains ability to help users find their next movie, but it looses the unique tags that truly explain what a movie uniquely is about.
 
 ### The judge
 
@@ -82,15 +82,33 @@ An order line looks like `296: nonlinear, hit men, dark comedy, ...`, the tags b
 
 **My ten movies:**
 
-XXXX
+104, Happy Gilmore (1996)
+3988, How the Grinch Stole Christmas (a.k.a. The Grinch) (2000)
+93272, Dr. Seuss' The Lorax (2012)
+72226, Fantastic Mr. Fox (2009)
+53460, Surf's Up (2007)
+45431, Over the Hedge (2006)
+114180, Maze Runner, The (2014)
+122906, Black Panther (2017)
+106696, Frozen (2013)
+81847, Tangled (2010)
 
 **My own order of the ten most-used tags, written before looking at any data: my movie from step 1, then my nine others from step 4:**
 
 104: comedy, Adam Sandler, funny, golf, sports, Underdog, underdog, Bob Barker, seen more than once, goofy
+3988: holiday, based on a book, silly, christmas, dr. seuss, xmas theme, jim carrey, christine baranski, taylor momsen, ron howard
+93272: reforestation, Dr. Seuss, nature, environmental, based on children's book, Commercialization, computer animation, Environmental Preservation, based on a book, business
+72226: hilarious, Wes Anderson, animation, Bill Murray, Roald Dahl, stop motion, quirky, talking animals, visually appealing, George Clooney
+53460: fun, Zooey Deschanel, Below R, mockumentary, penguin, positive, ocean, fresh story, surfing, talking animals
+45431: suburbia, talking animals, William Shatner, Steve Carell, Bruce Willis, Wanda Sykes, Funny, Dreamworks, computer animation, cartoon
+114180: post-apocalyptic, plot holes, dystopia, teen, survival, action, weak plot, maze, adventure, based on a book
+122906: marvel, great villain, Africa, strong female characters, diverse cast, , predictable, MCU, great costumes, social commentary, superhero
+106696: Disney, animation,siblings,beautiful, music, sisters, feminist, magic, musical, overrated
+81847: disney, Disney,  comedy, mother daughter relationship, songs, fairy tale, visually appealing, animation, musical, singing
 
-**One criterion I considered for the judge and rejected, and why** (the one I used is in `judge/criterion.md`)**:** XXXX
+**One criterion I considered for the judge and rejected, and why** (the one I used is in `judge/criterion.md`)**:** One that helps you find other movies to watch and correctly describes the movie its assigned to. I rejected it because I didn't want to judge to agree with me exactly
 
-**Agreement. The number `agreement.py` gives for your `score()`, for popularity and for your own order, and which of the three came closest to the judge:** XXXX
+**Agreement. The number `agreement.py` gives for your `score()`, for popularity and for your own order, and which of the three came closest to the judge:** popularity(4.26) is the closet one, while score comes in closely behind at 4.08 and then my own order is last at 3.20 meaning the judge agreed least with my order.
 
 **How the judge skill is built: the files it is made of and what each one does (about 150 words):**
 

@@ -1,0 +1,1471 @@
+movieId,tag,score
+176,cult film,0
+176,dreams,0
+176,love,0
+176,nudity (topless),425
+176,satire,0
+427,bad acting,0
+427,horror,0
+427,nudity (topless),0
+427,suspense,0
+427,thriller,0
+1007,acting,0
+1007,dialogue,0
+1007,disney,253
+1007,funny,0
+1007,silly,0
+1966,cerebral,0
+1966,christmas,0
+1966,dialogue driven,63
+1966,drama,0
+1966,intelligent,120
+1966,new york city,399
+1966,philosophy,0
+1966,quotable,0
+1966,witty,0
+1981,cheesy,188
+1981,funny,0
+1981,high school,0
+1981,new york city,0
+1981,serial killer,0
+2034,acting,0
+2034,bad science,90
+2034,dialogue,0
+2034,disney,253
+2034,robots,79
+2034,silly,247
+2034,space,112
+2034,space travel,102
+2163,bad acting,0
+2163,based on a book,0
+2163,cult film,651
+2163,funny,0
+2163,musical,178
+2163,parody,150
+2163,sci-fi,0
+2696,classic,0
+2696,clever,116
+2696,comedy,780
+2696,dialogue driven,0
+2696,epic,0
+2696,funny,786
+2696,good acting,0
+2696,good dialogue,0
+2696,hilarious,0
+2696,paris,100
+2696,witty,0
+3066,history,190
+3066,japan,96
+3066,military,0
+3066,war,0
+3066,world war ii,98
+3074,atmospheric,425
+3074,based on a book,0
+3074,gritty,129
+3074,revenge,0
+3074,survival,0
+3420,al pacino,26
+3420,comedy,0
+3420,corruption,0
+3420,crime,0
+3420,drama,604
+3420,satire,0
+3420,suspense,0
+3528,based on a book,0
+3528,gay,0
+3528,intense,0
+3528,memory,0
+3528,mental illness,0
+3528,new york city,0
+3528,rape,0
+3831,british,0
+3831,british comedy,32
+3831,comedy,0
+3831,drugs,264
+3831,england,183
+4167,death,0
+4167,detective,0
+4167,humorous,0
+4167,new york city,0
+4167,nudity (topless),425
+4167,prison,0
+4167,revenge,488
+4167,suspense,0
+4167,violence,822
+4329,atmospheric,0
+4329,humorous,0
+4329,murder,901
+4329,quirky,267
+4329,tense,0
+4329,western,71
+4427,anthony hopkins,28
+4427,christmas,166
+4427,england,0
+4427,father-son relationship,0
+4427,gay,0
+4427,great acting,0
+4427,great dialogue,0
+4427,great performances,33
+4427,historical,137
+4427,history,190
+4427,intelligent,120
+4427,witty,0
+5027,action,0
+5027,comedy,0
+5027,crime,0
+5027,investigation,0
+5027,nudity (topless),0
+5027,prison,227
+5222,cute,152
+5222,gay,0
+5222,new york city,399
+5222,predictable,0
+5222,relationships,107
+5222,sexuality,142
+6650,based on a book,680
+6650,black and white,146
+6650,black comedy,372
+6650,british comedy,32
+6650,cliche,0
+6650,comedy,0
+6650,dark comedy,0
+6650,drama,0
+6650,england,183
+6650,family,0
+6650,friendship,0
+6650,humorous,177
+6650,imdb top 250,295
+6650,murder,901
+6650,narrated,0
+6650,plot twist,0
+6650,prison,227
+6650,revenge,0
+6650,satire,289
+6650,satirical,0
+6650,serial killer,172
+6650,storytelling,0
+6650,suicide,0
+6650,witty,182
+187717,based on a true story,227
+187717,biography,153
+187717,documentary,61
+187717,emotional,0
+187717,heartwarming,135
+187717,love,472
+187717,tom hanks,0
+502,coming of age,0
+502,high school,206
+502,martial arts,319
+502,revenge,488
+502,romance,0
+502,teen,0
+1963,absurd,0
+1963,black comedy,372
+1963,dark comedy,0
+1963,funny,786
+1963,mockumentary,34
+1963,narrated,0
+1963,prison,227
+1963,satire,289
+2022,based on a book,680
+2022,controversial,64
+2022,epic,0
+2022,long,226
+2022,love,0
+2022,martin scorsese,21
+2022,memory,0
+2022,murder,0
+2022,nudity (topless),425
+2022,religion,191
+2022,slow,0
+2022,soundtrack,0
+2022,storytelling,0
+2022,surrealism,295
+2022,violence,822
+3152,bittersweet,144
+3152,black and white,146
+3152,christmas,0
+3152,coming of age,317
+3152,death,0
+3152,friendship,0
+3152,gay,0
+3152,high school,206
+3152,love,0
+3152,nudity (topless),425
+3152,reflective,58
+3152,sexuality,142
+3152,twist ending,0
+3201,classic,0
+3201,clever,0
+3201,cult film,0
+3201,existentialism,0
+3201,friendship,0
+3201,intellectual,0
+3201,jack nicholson,24
+3201,love,0
+3201,melancholy,0
+3201,nudity (topless),425
+3201,road trip,0
+3668,beautiful,162
+3668,drama,0
+3668,love,0
+3668,realistic,0
+3668,romance,583
+4155,cliche,0
+4155,drama,604
+4155,keanu reeves,32
+4155,love,472
+4155,quirky,0
+4155,sad,162
+4155,twist ending,203
+4255,absurd,95
+4255,boring,0
+4255,funny,786
+4255,surreal,244
+4255,surrealism,295
+4255,weird,114
+4255,witty,182
+4678,cult film,651
+4678,fun,190
+4678,funny,0
+4678,parody,150
+4678,quirky,267
+4678,satire,289
+4678,weird,0
+8607,anime,47
+8607,black comedy,0
+8607,car chase,0
+8607,christmas,166
+8607,comedy,0
+8607,dark comedy,0
+8607,drama,0
+8607,family,0
+8607,funny,0
+8607,japan,96
+8607,multiple storylines,0
+8607,overrated,0
+8607,social commentary,0
+8607,surrealism,0
+8633,1980s,221
+8633,aliens,163
+8633,bad acting,0
+8633,cheesy,0
+8633,space,112
+32017,action,0
+32017,disney,0
+32017,espionage,0
+32017,family,382
+32017,predictable,0
+32017,spy,0
+45442,boring,0
+45442,predictable,438
+45442,remake,201
+45442,survival,241
+45442,suspense,0
+45442,unrealistic,178
+49932,atmospheric,425
+49932,boring,709
+49932,cinematography,372
+49932,confusing,0
+49932,dark,275
+49932,disturbing,186
+49932,dreamlike,0
+49932,long,0
+49932,mindfuck,125
+49932,murder,0
+49932,nudity (topless),0
+49932,slow,0
+49932,stylized,0
+49932,surreal,244
+49932,unique,89
+49932,weird,114
+85412,action,0
+85412,adventure,0
+85412,atmospheric,425
+85412,bad acting,0
+85412,boring,0
+85412,comedy,0
+85412,conspiracy,197
+85412,fantasy,0
+85412,horror,0
+85412,mindfuck,0
+85412,mockumentary,34
+85412,mythology,72
+85412,original,0
+85412,religion,0
+90430,acting,0
+90430,dark comedy,259
+90430,dialogue,244
+90430,dialogue driven,63
+90430,drama,0
+90430,ensemble cast,173
+90430,good acting,128
+90430,psychological,161
+90430,psychology,0
+90430,satire,289
+90430,satirical,0
+90430,social commentary,293
+113348,action,628
+113348,comic book,150
+113348,conspiracy,0
+113348,fun,0
+113348,martial arts,319
+113348,new york city,0
+113348,plot holes,0
+113348,remake,0
+113348,silly,0
+113348,superhero,161
+113348,surprise ending,0
+113348,violence,0
+135141,action,0
+135141,bad science,0
+135141,based on a book,680
+135141,conspiracy,0
+135141,corruption,0
+135141,dystopia,202
+135141,futuristic,0
+135141,martial arts,0
+135141,memory,0
+135141,plot holes,155
+135141,plot twist,0
+135141,predictable,438
+135141,revenge,0
+135141,sequel,417
+135141,social commentary,0
+135141,surrealism,0
+135141,technology,0
+135141,violence,0
+141866,action,0
+141866,atmospheric,0
+141866,cheesy,0
+141866,cinematography,0
+141866,confusing,0
+141866,drugs,0
+141866,gore,288
+141866,murder,0
+141866,music,0
+141866,revenge,488
+141866,stylish,0
+141866,stylized,0
+141866,survival,241
+141866,suspense,426
+141866,thriller,402
+141866,violence,0
+141866,war,0
+275245,aliens,163
+275245,black comedy,0
+275245,confusing,0
+275245,creepy,0
+275245,dark comedy,0
+275245,dark humor,0
+275245,horror,0
+275245,long,0
+275245,mystery,0
+275245,psychological thriller,78
+275245,satire,0
+275245,sci-fi,406
+275245,surrealism,0
+275245,suspenseful,58
+275245,thriller,402
+275245,unique,89
+275245,western,0
+267,classic,428
+267,comedy,780
+267,cult film,0
+267,funny,786
+267,hilarious,191
+267,martial arts,0
+267,military,226
+267,remake,0
+267,violence,0
+1241,absurd,95
+1241,black comedy,372
+1241,cult classic,157
+1241,cult film,651
+1241,dark comedy,0
+1241,disturbing,0
+1241,funny,786
+1241,gore,288
+1241,hilarious,191
+1241,horror,264
+1241,murder,0
+1241,zombies,47
+2450,1980s,221
+2450,action,628
+2450,aliens,163
+2450,alternate reality,116
+2450,apocalypse,0
+2450,cheesy,0
+2450,comic book,0
+2450,cult classic,0
+2450,cult film,651
+2450,fun,0
+2450,funny,786
+2450,martial arts,0
+2450,marvel,61
+2450,sci-fi,406
+2450,silly,0
+2450,superhero,0
+2966,acting,0
+2966,based on a true story,227
+2966,biography,0
+2966,boring,709
+2966,disney,0
+2966,family,382
+2966,imdb top 250,0
+2966,inspirational,123
+2966,road trip,111
+2966,slow,327
+3100,beautifully filmed,0
+3100,brad pitt,40
+3100,cinematography,372
+3100,classic,0
+3100,coming of age,0
+3100,father-son relationship,0
+3100,religion,0
+6755,comedy,780
+6755,cult classic,0
+6755,cult film,651
+6755,death,0
+6755,funny,0
+6755,great soundtrack,0
+6755,hilarious,191
+6755,horror,0
+6755,martial arts,0
+6755,mental illness,153
+6755,quirky,267
+7460,atmospheric,425
+7460,bill murray,34
+7460,black and white,146
+7460,boring,0
+7460,dialogue,244
+7460,dialogue driven,63
+7460,good dialogue,0
+7460,surreal,244
+8947,atmospheric,0
+8947,horror,264
+8947,japan,96
+8947,nonlinear,0
+8947,remake,201
+8947,suicide,0
+27721,based on a book,0
+27721,boring,0
+27721,confusing,92
+27721,depressing,0
+27721,paris,0
+27721,romance,583
+27721,slow paced,0
+27721,war,0
+40339,aliens,163
+40339,animation,236
+40339,coming of age,317
+40339,cute,0
+40339,disney,253
+40339,father-son relationship,166
+40339,funny,786
+40339,pixar,48
+40339,silly,247
+43836,comedy,780
+43836,crime,310
+43836,cult film,0
+43836,death,0
+43836,heist,0
+43836,investigation,211
+43836,murder,0
+43836,mystery,0
+43836,new york city,0
+43836,parody,0
+43836,remake,201
+43836,spy,0
+55805,acting,277
+55805,crime,0
+55805,death,0
+55805,drama,0
+55805,drugs,264
+55805,investigation,0
+55805,murder,0
+55805,neo-noir,0
+55805,new york city,0
+55805,nonlinear,67
+55805,nudity (topless),425
+55805,sad,0
+55805,social commentary,0
+55805,tense,240
+55805,thriller,0
+55805,violence,0
+61248,action,628
+61248,car chase,0
+61248,cheesy,0
+61248,dystopia,0
+61248,gore,0
+61248,predictable,0
+61248,prison,0
+61248,remake,201
+61248,violence,822
+72733,based on a true story,0
+72733,biography,0
+72733,clint eastwood,34
+72733,drama,0
+72733,matt damon,35
+72733,morgan freeman,42
+72733,politics,0
+72733,racism,177
+73344,acting,0
+73344,cinematography,372
+73344,corruption,0
+73344,drugs,0
+73344,great acting,199
+73344,gritty,129
+73344,long,226
+73344,mafia,92
+73344,overrated,0
+73344,prison,227
+73344,psychology,157
+122896,action,0
+122896,adventure,355
+122896,dark,0
+122896,disney,0
+122896,fantasy,0
+122896,funny,786
+122896,johnny depp,48
+122896,plot holes,0
+122896,sequel,417
+122896,special effects,126
+122896,violence,822
+122896,violent,0
+122898,apocalypse,0
+122898,assassin,0
+122898,batman,16
+122898,comic book,0
+122898,dark hero,0
+122898,death,0
+122898,dialogue,0
+122898,ensemble cast,173
+122898,humor,0
+122898,investigation,0
+122898,martial arts,0
+122898,marvel,0
+122898,murder,0
+122898,prison,0
+122898,sequel,0
+122898,superhero,161
+122898,surrealism,0
+122898,technology,0
+122898,violence,0
+125916,bad acting,0
+125916,based on a book,680
+125916,boring,0
+125916,chick flick,0
+125916,drama,0
+125916,fantasy,0
+125916,love,472
+125916,nudity (topless),425
+125916,plot holes,155
+125916,psychological,0
+125916,sexuality,142
+125916,soundtrack,0
+125916,stupid,240
+130634,action,628
+130634,car chase,233
+130634,crime,0
+130634,drama,0
+130634,emotional,0
+130634,ensemble cast,0
+130634,family,0
+130634,great soundtrack,0
+130634,happy ending,104
+130634,heist,0
+130634,humorous,0
+130634,long,0
+130634,plot holes,0
+130634,revenge,488
+130634,silly,0
+130634,stupid,0
+130634,suspense,0
+130634,technology,0
+130634,thriller,0
+130634,unrealistic,178
+194951,apocalypse,100
+194951,atmospheric,425
+194951,based on a book,0
+194951,boring,0
+194951,creepy,0
+194951,drama,0
+194951,dystopia,202
+194951,future,0
+194951,horror,264
+194951,nonlinear,0
+194951,overrated,370
+194951,plot holes,155
+194951,post-apocalyptic,76
+194951,predictable,0
+194951,slow paced,0
+194951,suicide,303
+194951,survival,241
+194951,suspense,426
+194951,thriller,402
+5,comedy,780
+5,family,382
+5,fantasy,0
+5,heartwarming,0
+5,humorous,0
+5,remake,0
+5,sentimental,0
+5,sequel,417
+5,touching,122
+151,adventure,0
+151,atmospheric,0
+151,biography,153
+151,history,0
+151,rape,175
+151,tense,0
+151,western,0
+610,drugs,0
+610,fantasy,0
+610,gore,0
+610,inspirational,0
+610,nudity (full frontal),0
+610,nudity (topless),425
+610,sci-fi,406
+610,surreal,244
+783,animation,236
+783,based on a book,0
+783,dark,0
+783,disney,253
+783,emotional,0
+783,heartwarming,0
+783,musical,178
+783,paris,100
+783,religion,0
+783,sentimental,63
+783,soundtrack,0
+1284,atmospheric,0
+1284,based on a book,0
+1284,black and white,0
+1284,classic,428
+1284,crime,0
+1284,detective,0
+1284,dialogue,0
+1284,film noir,57
+1284,imdb top 250,295
+1284,murder,0
+1284,mystery,0
+1284,neo-noir,0
+1284,suspense,0
+1284,thriller,0
+1688,adventure,0
+1688,animation,236
+1688,classic,428
+1688,cute,0
+1688,funny,786
+1688,great soundtrack,0
+1688,love,0
+1688,magic,188
+1688,music,378
+1688,musical,178
+1688,romantic,110
+1688,soundtrack,422
+1688,strong female lead,159
+1688,witty,182
+1960,acting,0
+1960,based on a true story,227
+1960,biography,153
+1960,boring,0
+1960,cinematography,372
+1960,epic,159
+1960,historical,0
+1960,history,190
+1960,japan,0
+1960,long,226
+1960,murder,0
+1960,music,0
+1960,oscar (best picture),78
+1960,prison,0
+1960,slow,0
+1960,suicide,0
+1960,too long,0
+1960,true story,201
+1960,visually stunning,0
+1960,war,224
+1960,world war ii,98
+2004,christmas,0
+2004,cult film,0
+2004,new york city,399
+2004,satire,0
+2004,satirical,0
+2004,sequel,417
+2004,social commentary,0
+2004,steven spielberg,40
+2004,surprise ending,0
+2580,black comedy,372
+2580,car chase,233
+2580,christmas,166
+2580,comedy,780
+2580,crime,0
+2580,cult film,0
+2580,dark comedy,259
+2580,drugs,264
+2580,ensemble cast,0
+2580,funny,0
+2580,humorous,177
+2580,multiple storylines,58
+2580,nonlinear,67
+2580,nudity (topless),425
+2580,revenge,488
+2580,storytelling,96
+3386,boring,0
+3386,conspiracy,197
+3386,controversial,64
+3386,death,0
+3386,dialogue,0
+3386,drama,0
+3386,ensemble cast,0
+3386,great acting,0
+3386,historical,137
+3386,history,190
+3386,investigation,0
+3386,long,0
+3386,overrated,0
+3386,politics,206
+3386,thriller,0
+3386,true story,0
+3745,aliens,0
+3745,animation,236
+3745,apocalypse,0
+3745,cliche,0
+3745,cult film,0
+3745,dystopia,0
+3745,father-son relationship,0
+3745,future,185
+3745,futuristic,0
+3745,love,0
+3745,matt damon,0
+3745,murder,0
+3745,plot holes,0
+3745,post-apocalyptic,76
+3745,prison,0
+3745,sci-fi,406
+3745,space,112
+3745,space travel,102
+3745,violence,0
+5014,acting,0
+5014,bittersweet,0
+5014,feel-good,124
+5014,mental illness,153
+5014,psychology,157
+5014,soundtrack,0
+5014,thought-provoking,211
+5014,touching,122
+5014,unrealistic,178
+5954,crime,310
+5954,dark,0
+5954,depressing,129
+5954,drugs,264
+5954,edward norton,22
+5954,friendship,597
+5954,homosexuality,0
+5954,japan,0
+5954,melancholy,0
+5954,new york city,399
+5954,powerful ending,19
+5954,prison,0
+5954,psychology,157
+5954,surrealism,0
+6440,apocalypse,0
+6440,black comedy,0
+6440,cinematography,0
+6440,coen brothers,23
+6440,cult film,0
+6440,dark comedy,0
+6440,disturbing,186
+6440,hallucinatory,42
+6440,murder,0
+6440,neo-noir,0
+6440,new york city,399
+6440,quirky,267
+6440,satire,0
+6440,serial killer,0
+6440,stylized,295
+6440,surprise ending,0
+6440,surreal,244
+6440,surrealism,0
+6440,twist,64
+6440,weird,114
+6867,cute,0
+6867,friendship,597
+6867,loneliness,133
+6867,melancholy,66
+6867,quirky,267
+6867,satirical,113
+6867,slow paced,0
+6867,touching,0
+47997,black comedy,0
+47997,car chase,0
+47997,cult film,0
+47997,dark comedy,259
+47997,dystopia,202
+47997,friendship,0
+47997,funny,786
+47997,future,185
+47997,futuristic,0
+47997,genius,66
+47997,military,0
+47997,narrated,0
+47997,overrated,0
+47997,politics,0
+47997,prison,0
+47997,satire,289
+47997,satirical,0
+47997,social commentary,293
+47997,space,0
+47997,stupid,0
+47997,surprise ending,0
+47997,thought-provoking,211
+47997,time travel,127
+53519,black comedy,0
+53519,car chase,233
+53519,dark comedy,0
+53519,dialogue,244
+53519,feminism,81
+53519,friendship,0
+53519,gore,0
+53519,great dialogue,30
+53519,great soundtrack,306
+53519,murder,0
+53519,overrated,0
+53519,quentin tarantino,16
+53519,revenge,488
+53519,slow,327
+53519,slow paced,120
+53519,stylish,78
+53519,stylized,295
+53519,too long,209
+53519,violence,822
+53519,violent,0
+64620,based on a true story,227
+64620,boring,0
+64620,good acting,128
+64620,historical,0
+64620,history,190
+64620,intelligent,0
+64620,politics,206
+64620,suspense,426
+64620,true story,201
+65514,action,628
+65514,biography,153
+65514,cliche,0
+65514,drama,0
+65514,family,0
+65514,inspirational,0
+65514,martial arts,319
+65514,predictable,0
+65514,racism,0
+89904,black and white,146
+89904,boring,709
+89904,cinematography,372
+89904,drama,0
+89904,emotional,0
+89904,original,139
+89904,oscar (best picture),78
+89904,overrated,0
+89904,romance,583
+89904,sentimental,0
+89904,silly,0
+89904,visually appealing,282
+356,1980s,0
+356,acting,0
+356,action,0
+356,adventure,355
+356,bad acting,0
+356,based on a book,680
+356,beautiful,0
+356,biography,153
+356,bittersweet,144
+356,boring,709
+356,cheesy,0
+356,chick flick,0
+356,classic,428
+356,comedy,780
+356,coming of age,0
+356,cult classic,0
+356,cult film,0
+356,cute,0
+356,dark comedy,0
+356,drama,604
+356,emotional,176
+356,epic,159
+356,excellent script,0
+356,family,382
+356,fantasy,0
+356,feel good movie,42
+356,feel-good,124
+356,friendship,597
+356,fun,0
+356,funny,786
+356,good acting,128
+356,good dialogue,0
+356,great acting,199
+356,great performances,0
+356,great soundtrack,306
+356,happy ending,0
+356,heartwarming,135
+356,historical,137
+356,history,190
+356,humor,0
+356,humorous,0
+356,imdb top 250,0
+356,inspirational,123
+356,intense,0
+356,interesting,0
+356,long,226
+356,love,472
+356,love story,0
+356,masterpiece,0
+356,mental illness,153
+356,military,226
+356,multiple storylines,0
+356,narrated,99
+356,new york city,0
+356,original,0
+356,oscar (best picture),78
+356,overrated,370
+356,philosophical,0
+356,political,0
+356,psychological,0
+356,psychology,157
+356,quirky,267
+356,quotable,108
+356,racism,0
+356,realistic,0
+356,reflective,0
+356,romance,583
+356,sad,162
+356,satire,0
+356,sentimental,63
+356,sexuality,142
+356,silly,0
+356,slow,0
+356,smart,0
+356,social commentary,0
+356,soundtrack,0
+356,special effects,0
+356,steven spielberg,0
+356,storytelling,0
+356,stupid,0
+356,surprise ending,0
+356,thought-provoking,0
+356,tom hanks,38
+356,too long,0
+356,touching,122
+356,unpredictable,0
+356,war,224
+356,whimsical,77
+356,witty,0
+434,action,628
+434,clint eastwood,34
+434,heist,103
+434,organized crime,0
+434,thriller,402
+596,animation,236
+596,classic,428
+596,cute,152
+596,disney,253
+596,disturbing,0
+596,fairy tale,79
+596,fantasy,341
+596,fun,0
+596,magic,0
+596,music,378
+596,musical,0
+596,pixar,48
+596,weird,0
+1562,action,628
+1562,artificial intelligence,0
+1562,atmospheric,425
+1562,bad acting,233
+1562,bad science,0
+1562,batman,16
+1562,black comedy,0
+1562,car chase,0
+1562,cheesy,188
+1562,comic book,150
+1562,death,0
+1562,funny,786
+1562,george clooney,29
+1562,heist,0
+1562,martial arts,0
+1562,murder,0
+1562,quotable,0
+1562,revenge,0
+1562,sequel,0
+1562,silly,247
+1562,soundtrack,422
+1562,superhero,161
+1562,surprise ending,0
+1562,violence,0
+1994,1980s,0
+1994,classic,0
+1994,creepy,116
+1994,family,382
+1994,fun,0
+1994,horror,264
+1994,love,0
+1994,steven spielberg,0
+1994,supernatural,0
+1994,suspense,426
+1994,thriller,0
+2080,animation,236
+2080,christmas,0
+2080,classic,428
+2080,disney,253
+2080,drama,0
+2080,family,0
+2080,romance,583
+2080,romantic,0
+2278,action,0
+2278,boring,0
+2278,car chase,233
+2278,crime,310
+2278,intelligent,120
+2278,mafia,0
+2278,organized crime,120
+2278,paris,0
+2278,robert de niro,46
+2278,thriller,0
+2278,violence,0
+2420,1980s,0
+2420,classic,428
+2420,comedy,0
+2420,coming of age,0
+2420,feel-good,0
+2420,inspirational,123
+2420,martial arts,319
+2420,violence,0
+2791,absurd,95
+2791,classic,428
+2791,clever,0
+2791,comedy,780
+2791,dark comedy,0
+2791,fun,0
+2791,funny,786
+2791,genius,0
+2791,hilarious,191
+2791,original,0
+2791,parody,150
+2791,quotable,108
+2791,romance,0
+2791,silly,247
+2791,war,0
+5388,al pacino,26
+5388,atmospheric,425
+5388,christopher nolan,12
+5388,corruption,225
+5388,dark,0
+5388,detective,164
+5388,love,0
+5388,murder,901
+5388,neo-noir,0
+5388,psychological,161
+5388,psychology,157
+5388,remake,201
+5388,robin williams,32
+5388,soundtrack,0
+5388,thought-provoking,211
+6541,alternate reality,0
+6541,comic book,150
+6541,cult film,0
+6541,england,0
+6541,gothic,103
+6541,martial arts,0
+6541,murder,0
+6541,nazis,0
+6541,suicide,0
+6541,superhero,161
+6541,supernatural,0
+6541,surprise ending,0
+6541,too long,0
+6541,vampires,47
+6541,violence,0
+6953,boring,0
+6953,crime,0
+6953,death,700
+6953,depressing,0
+6953,drama,604
+6953,intense,0
+6953,melancholy,66
+6953,multiple storylines,58
+6953,murder,0
+6953,nonlinear,67
+6953,nudity (topless),0
+6953,psychological,161
+6953,realistic,147
+6953,religion,191
+6953,remake,0
+6953,revenge,0
+6953,slow,0
+6953,storytelling,0
+6953,thriller,0
+6953,violent,0
+30707,bittersweet,144
+30707,cheesy,0
+30707,clint eastwood,34
+30707,dark,275
+30707,dark hero,0
+30707,death,0
+30707,depressing,129
+30707,drama,604
+30707,emotional,176
+30707,england,0
+30707,friendship,0
+30707,good acting,0
+30707,great acting,199
+30707,gritty,129
+30707,imdb top 250,295
+30707,inspirational,123
+30707,intense,0
+30707,morgan freeman,42
+30707,murder,0
+30707,mythology,0
+30707,narrated,99
+30707,oscar (best picture),78
+30707,overrated,370
+30707,philosophical,0
+30707,predictable,0
+30707,road trip,0
+30707,sad,162
+30707,slow,0
+30707,slow paced,0
+30707,social commentary,293
+30707,strong female lead,159
+30707,suicide,303
+30707,thought-provoking,211
+30707,violence,822
+30749,based on a true story,227
+30749,biography,0
+30749,classic,0
+30749,death,0
+30749,depressing,129
+30749,drama,604
+30749,family,0
+30749,history,190
+30749,imdb top 250,0
+30749,murder,0
+30749,racism,177
+30749,sad,0
+30749,survival,241
+30749,thriller,0
+30749,true story,201
+30749,violence,0
+30749,war,224
+48385,absurd,0
+48385,boring,0
+48385,classic,0
+48385,comedy,780
+48385,controversial,64
+48385,crude humor,70
+48385,feminism,0
+48385,funny,786
+48385,hilarious,191
+48385,love,0
+48385,mockumentary,34
+48385,new york city,0
+48385,nudity (full frontal),140
+48385,overrated,0
+48385,quotable,0
+48385,racism,177
+48385,road trip,111
+48385,satire,289
+48385,social commentary,293
+48385,weird,0
+53000,action,628
+53000,death,0
+53000,england,0
+53000,gore,0
+53000,military,226
+53000,music,0
+53000,plot holes,0
+53000,post-apocalyptic,76
+53000,sequel,417
+53000,supernatural,0
+53000,surprise ending,0
+53000,survival,241
+53000,violence,0
+53000,zombies,47
+66097,alternate reality,116
+66097,animation,236
+66097,atmospheric,0
+66097,based on a book,680
+66097,boring,0
+66097,creepy,116
+66097,dark,275
+66097,depressing,0
+66097,dystopia,202
+66097,fairy tale,79
+66097,fantasy,341
+66097,fantasy world,72
+66097,gothic,103
+66097,overrated,0
+66097,slow,0
+66097,storytelling,0
+66097,surreal,244
+66097,thought-provoking,0
+66097,tim burton,24
+66097,unique,0
+66097,visually appealing,0
+66097,visually stunning,112
+66097,whimsical,0
+72998,action,628
+72998,adventure,0
+72998,aliens,163
+72998,animation,0
+72998,bad science,90
+72998,beautiful,162
+72998,beautiful scenery,35
+72998,boring,0
+72998,cinematography,0
+72998,cliche,150
+72998,dialogue,0
+72998,drama,604
+72998,epic,159
+72998,fantasy,341
+72998,funny,0
+72998,future,0
+72998,futuristic,84
+72998,great soundtrack,0
+72998,happy ending,0
+72998,heartwarming,0
+72998,imdb top 250,295
+72998,intense,0
+72998,long,226
+72998,love story,0
+72998,military,226
+72998,music,378
+72998,mythology,72
+72998,overrated,0
+72998,philosophical,0
+72998,politics,206
+72998,predictable,438
+72998,racism,177
+72998,robots,0
+72998,romance,583
+72998,sci-fi,406
+72998,science,0
+72998,science fiction,145
+72998,social commentary,293
+72998,space,0
+72998,space travel,0
+72998,special effects,126
+72998,surreal,0
+72998,technology,0
+72998,thought-provoking,211
+72998,too long,209
+72998,unrealistic,0
+72998,violent,0
+72998,virtual reality,0
+72998,visually appealing,282
+72998,visually stunning,112
+72998,war,224
+90405,anti-hero,0
+90405,boring,0
+90405,car chase,0
+90405,cheesy,188
+90405,corruption,225
+90405,crime,310
+90405,cyberpunk,0
+90405,death,0
+90405,detective,0
+90405,dystopia,202
+90405,existentialism,0
+90405,future,185
+90405,love,0
+90405,murder,0
+90405,original,139
+90405,plot holes,155
+90405,predictable,0
+90405,reflective,58
+90405,revenge,0
+90405,sci-fi,406
+90405,social commentary,293
+90405,suicide,0
+90405,surprise ending,0
+90405,suspense,426
+90405,thought-provoking,211
+90405,thriller,402
+90405,violence,0
+111362,action,628
+111362,artificial intelligence,0
+111362,comedy,0
+111362,comic book,150
+111362,cyberpunk,0
+111362,death,0
+111362,dialogue,0
+111362,disney,0
+111362,dystopia,0
+111362,ensemble cast,0
+111362,funny,0
+111362,martial arts,0
+111362,marvel,61
+111362,military,0
+111362,murder,0
+111362,new york city,0
+111362,nonlinear,0
+111362,paris,0
+111362,prison,0
+111362,revenge,0
+111362,sci-fi,406
+111362,science fiction,145
+111362,sequel,417
+111362,social commentary,0
+111362,special effects,0
+111362,superhero,161
+111362,surprise ending,0
+111362,surrealism,0
+111362,survival,0
+111362,suspense,0
+111362,time travel,127
+111362,violence,0
+106696,animation,236
+106696,disney,253
+106696,musical,178
+114180,plot holes,155
+81847,animation,236
+81847,fairy tale,79
+106696,magic,188
+106696,romance,583
+122906,superhero,161
+114180,dystopia,202
+114180,mystery,235
+114180,post-apocalyptic,76
+114180,survival,241
+72226,animation,236
+72226,bittersweet,144
+72226,george clooney,29
+72226,music,378
+72226,quirky,267
+72226,visually appealing,282
+72226,wes anderson,12
+81847,disney,253
+122906,comic book,150
+122906,marvel,61
+122906,technology,90
+122906,social commentary,293
+72226,hilarious,191
+122906,predictable,438
+81847,feel-good,0
+72226,based on a book,680
+72226,father-son relationship,166
+72226,survival,0
+122906,absurd,0
+122906,racism,177
+114180,action,628
+114180,adventure,355
+114180,teen,119
+106696,funny,0
+106696,music,378
+3988,jim carrey,25
+106696,beautiful,162
+106696,cute,0
+106696,overrated,370
+104,comedy,780
+81847,funny,0
+81847,visually appealing,282
+114180,robots,79
+114180,based on a book,680
+3988,silly,247
+81847,musical,178
+106696,fantasy world,72
+81847,feel good movie,42
+81847,magic,188
+106696,love,0
+114180,boring,0
+122906,feminism,81
+122906,strong female lead,159
+3988,christmas,166
+114180,twist ending,0
+53460,fun,190
+53460,mockumentary,34
+72226,bill murray,34
+104,silly,0
+104,hilarious,0
+122906,family,382
+122906,military,226
+122906,soundtrack,422
+122906,martial arts,319
+104,hayao miyazaki,0
+3988,homosexuality,0
+45431,bruce willis,53
+45431,overrated,0
+72226,stylized,0
+122906,sci-fi,406
+114180,thriller,0
+104,funny,786
+3988,based on a book,680
+3988,remake,0
+72226,clever,0
+72226,family,0
+72226,fun,0
+72226,good dialogue,0
+72226,intelligent,0
+72226,original,0
+72226,witty,0
+106696,boring,0
+106696,cliche,0
+114180,horror,0
+122906,action,628
+3988,comedy,780
+93272,based on a book,680
+72226,funny,0
+3988,acting,0
+3988,dialogue,0
+106696,dialogue,0
+45431,pixar,48
+114180,good acting,0
+122906,mythology,0
+106696,heartwarming,0
+81847,based on a book,0
+81847,comedy,780
+45431,cult film,0
+72226,cult film,0
+72226,martial arts,0
+72226,revenge,0
+72226,whimsical,0
+122906,car chase,233
+122906,conspiracy,0
+122906,cult film,0
+122906,death,0
+122906,espionage,0
+122906,friendship,0
+122906,future,0
+122906,futuristic,0
+122906,murder,0
+122906,politics,0
+122906,revenge,0
+122906,sequel,0
+122906,spy,0
+122906,surprise ending,0
+122906,surrealism,0
+122906,suspense,0
+122906,violence,0
+53460,funny,0
+106696,fairy tale,0
+45431,animation,236
+45431,funny,786
+72226,creepy,0
+93272,animation,236
+93272,family,382
+45431,witty,0
+106696,family,0
+122906,overrated,0
+81847,soundtrack,0
+81847,cute,0
+81847,love,0
+114180,suicide,0
+122906,inspirational,0
+93272,musical,0
+122906,music,0
+3988,cinematography,0
+3988,funny,0
+3988,fantasy,0
+122906,adventure,0
+45431,fun,0
+122906,bad acting,0
