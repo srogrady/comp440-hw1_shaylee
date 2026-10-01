@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: ba17aad2-4ccb-4fe4-802b-6f254d2052c2 | 2026-09-30T19:17:02.626Z -->
 ## Session `ba17aad2` — 2026-09-30 19:17:02
 
-*101 user turns. Tool outputs and reasoning omitted.*
+*102 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 lets continue homework1
@@ -1756,5 +1756,17 @@ chnage rate to tag
 
 **Claude:**
 - 🔧 `Bash` — Swap rate for tag, recheck, and refresh the transcript
+The slot now ends: "The second is showing that more people tag movies than I thought."
+
+Here's the rest of the checkpoint:
+- **`run_all.py`:** `0 missing in the parts you have reached.`
+- **Transcript:** `1 session(s) found; this session in TRANSCRIPT.md: yes.`
+
+Part 2's outputs are all on disk: the figure, `scores.csv`, `judge/ratings_movies.csv`, `agreement.csv` and the updated viewer.
+
+**Ready for me to commit this as `Part 2 done`?**
+
+**User:**
+yes commit lets keept moving
 
 <!-- end-session: ba17aad2-4ccb-4fe4-802b-6f254d2052c2 -->
