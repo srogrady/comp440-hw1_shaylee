@@ -44,11 +44,11 @@ Code: `part1_data.py`.
 
 Code: `part2_tags.py`.
 
-**My movie, and why I picked it:** XXXX
+**My movie, and why I picked it:** I picked Happy Gilmore because it is a chaotic movie that can be described or tagged in many different ways, so I thought it would be an interesting example
 
 **Its most misleading tag in the count-ordered list, and why it misleads:** the underdog and Underdog was misleading. It is misleading because the only difference between the two is that the first letter is capitalized in one case and not in the other. So, how do you know which one to tag when it is only a writing style difference.
 
-**What I learned about how MovieLens collects ratings and tags, from rating and tagging my movie myself (about 100 words):** XXXX
+**What I learned about how MovieLens collects ratings and tags, from rating and tagging my movie myself (about 100 words):** It's very easy to add a tag once you click into a movie so that is accessible, and then it keeps your tag in a "your tags" section, and then you can say if you like thats attribute (the tag) about the movie or if that tag was a bad thing, and as for ratings it very easy and fun to hover over and rate the movie in seconds, and it gives a word adjective with the number.
 
 ### Up close
 
@@ -112,44 +112,46 @@ An order line looks like `296: nonlinear, hit men, dark comedy, ...`, the tags b
 
 **How the judge skill is built: the files it is made of and what each one does (about 150 words):**
 
-XXXX
+SKILL.md tells the judge what to read, README.md explains the process, system.md gives the judge its rules, judge.py runs the actual judging, and criterion.md provides the specific criterion being judged.
 
 **What happens when I run `/judge`, from the first check to the CSV (about 150 words):**
 
-XXXX
+When I run /judge, it first checks that all the needed files exist and that my criterion has been changed from the template. Then it reads the instructions and my ten movies, and tells me what it is going to ask. It sends each movie to Claude to be rated, checks that the responses have the correct tag and rating format, and re-asks any movie if the response is too short. Finally, it saves all the ratings in a CSV file and shows the cost and time it took.
 
 **Why a skill: what a skill like this gives you that a script or a prompt alone does not, and where you would use one next (about 100 words):**
 
-XXXX
+A skill like this is useful because it combines the instructions, prompts, and code into one repeatable process. A script or prompt alone would not provide the same structure and consistency for running the judge and checking the results.
+
+I would use a skill like this when I have a repetitive task that needs the same process each time, such as evaluating multiple movies, comparing items using the same criteria, or analyzing a set of responses
 
 ### The viewer and the disagreements
 
-**One thing `movie_results.html` showed me that was useful, and one thing about it that got in my way:** XXXX
+**One thing `movie_results.html` showed me that was useful, and one thing about it that got in my way:** the comparison of judges order vs my order being so close was helpful, and then what got in my way was the long blocks of tags on the movie
 
 Then three improvements. For each: what the page would not let you see, what you had Claude
 change, and what the changed page shows that the first draft did not.
 
-**Improvement 1:** XXXX
+**Improvement 1:** The long tag blocks hurt me from seeing everything because it made it hard to scroll so the fixed page should so a preview of the table and then my collapsible. Improvement one was about allowing for a better viewing experience
 
-**Improvement 2:** XXXX
+**Improvement 2:** improvement 2 is a comparison edit to show the common selections between the judge and your score sections. they should be side by side and then also have a check next to them if that tag appears in both, because currently its hard to tell if the judge and my score are similar
 
-**Improvement 3:** XXXX
+**Improvement 3:** the last improvement is about getting to the movies you want to look at faster, and easier. there should be a glossary that allows you to click to that movie at the top, because currectly you don't know what movies you are researching, or what the order is
 
 Then the three disagreements. A disagreement is a movie and a tag where your `score()` and the
 judge are furthest apart. For each: the movie and the tag, where your `score()` put it and where
 the judge put it, and what you think accounts for the gap.
 
-**Disagreement 1:** XXXX
+**Disagreement 1:** Tangled, comedy and I think the gap is because of my mean tag score part
 
-**Disagreement 2:** XXXX
+**Disagreement 2:** Now Fantastic Mr Fox, creepy, I think the biggest disagreement was because a lot of people disagree on what the movie experience was like
 
-**Disagreement 3:** XXXX
+**Disagreement 3:** disagreement 3 is with how the grinch stole christmas and it is with the fantasy tag and it has only one disagreement row, so it doesn't give that muhc room for error
 
-**One other high-level pattern in the results, and what you think is behind it:** XXXX
+**One other high-level pattern in the results, and what you think is behind it:** There is a large variety of different numbers of tags for each movie, so it's hard to compare correctness between the my score and the judges score across movies because some have only three tags to go off of and some have 10
 
 ## Predictions revisited
 
-**Which of my three predictions were wrong, and what I make of each miss:** XXXX
+**Which of my three predictions were wrong, and what I make of each miss:** the first two are wrong and the first miss shows how similar adjectives can be, but also that people think of similar ideas in slightly different ways. The second is showing that more people tag movies than I thought.
 
 ## Part 3. What tags best describe a user?
 

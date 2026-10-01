@@ -234,6 +234,25 @@ def part2_tags(ratings, tags, movies, links):
         print(asked[missing.values].to_string(index=False))
 
     print("== (6) the four rankings ==")
+    # four lists per movie, one after another, best first, never in one table
+    from agreement import my_order_lines
+    mine_order = my_order_lines()
+    judge = pd.read_csv("judge/ratings_movies.csv", keep_default_na=False)
+    titles = movies.set_index("movieId")["title"]
+    for movie_id in my_ten_movies():
+        on_movie = tags[tags["movieId"] == movie_id]
+        rated = judge[judge["id"] == movie_id].sort_values(["rating", "tag"], ascending=[False, True])
+        mine_scores = (scores[scores["movieId"] == movie_id]
+                       .sort_values(["score", "tag"], ascending=[False, True]))
+        print(f"-- {titles.get(movie_id, movie_id)} --")
+        lists = [("the counts", list(on_movie["tag"].value_counts().head(10).index)),
+                 ("my own order", mine_order.get(movie_id, [])),
+                 ("the judge's order", list(rated["tag"].head(10))),
+                 ("my score()'s order", list(mine_scores["tag"].head(10)))]
+        for heading, ranked_tags in lists:
+            print(f"  {heading}:")
+            for rank, tag in enumerate(ranked_tags, 1):
+                print(f"    {rank:2d}. {tag}")
 
 
 if __name__ == "__main__":

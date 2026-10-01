@@ -49,9 +49,12 @@ SHOWN = 10  # how many disagreements to show per movie
 DEFINITION = ("A disagreement is a movie-tag pair whose rank under score() and its rank in the "
               "judge's list differ by at least %d. Every list is ranked best first, with ties "
               "broken alphabetically." % GAP)
+PREVIEW = 10  # rows of the tags table shown before the collapsed rest
+
 CSS = """body { font-family: Helvetica, Arial, sans-serif; margin: 20px; }
 table { border-collapse: collapse; margin-bottom: 12px; }
-th, td { border: 1px solid #999999; padding: 4px 8px; text-align: left; }"""
+th, td { border: 1px solid #999999; padding: 4px 8px; text-align: left; }
+.pair { display: flex; gap: 48px; flex-wrap: wrap; }"""
 
 
 def as_date(stamp):
@@ -167,19 +170,40 @@ def list_html(tags):
     return "<ol>%s</ol>" % "".join("<li>%s</li>" % html.escape(t) for t in tags)
 
 
+def checked_list_html(tags, other):
+    """Like list_html, with a check after each tag that is also in the other list."""
+    if not tags:
+        return "<p>not written yet</p>"
+    return "<ol>%s</ol>" % "".join(
+        "<li>%s%s</li>" % (html.escape(t), " &#10003;" if t in other else "") for t in tags)
+
+
 def render(movies):
     """Build the page."""
     head = "<title>Results Viewer v0</title>\n<style>\n%s\n</style>" % CSS
     body = ["<h1>Results Viewer</h1>", "<p>%s</p>" % html.escape(DEFINITION)]
-    for movie in movies:
+    # Improvement 3: a clickable index of every movie on the page, in page order
+    body += ["<h2>Movies on this page</h2>", "<ol>%s</ol>" % "".join(
+        '<li><a href="#movie-%d">%s</a></li>' % (i, html.escape(m["title"]))
+        for i, m in enumerate(movies))]
+    for i, movie in enumerate(movies):
         body += [
-            "<h2>%s</h2>" % html.escape(movie["title"]),
+            '<h2 id="movie-%d">%s</h2>' % (i, html.escape(movie["title"])),
             "<h3>By count</h3>", list_html(movie["counts"]),
             "<h3>Your order</h3>", list_html(movie["mine"]),
-            "<h3>The judge's order</h3>", list_html(movie["judge"]),
-            "<h3>Your score()</h3>", list_html(movie["score"]),
+            # Improvement 2: judge and score() side by side, a check on tags in both lists
+            '<div class="pair"><div>',
+            "<h3>The judge's order</h3>", checked_list_html(movie["judge"], movie["score"]),
+            "</div><div>",
+            "<h3>Your score()</h3>", checked_list_html(movie["score"], movie["judge"]),
+            "</div></div>",
             "<h3>Tags on this movie</h3>",
-            table_html(["Tag", "User", "Date"], movie["apps"]),
+            # Improvement 1: a short preview, with the rest of the rows collapsed
+            table_html(["Tag", "User", "Date"], movie["apps"][:PREVIEW]),
+            ("<details><summary>Show the other %d rows</summary>%s</details>"
+             % (len(movie["apps"]) - PREVIEW,
+                table_html(["Tag", "User", "Date"], movie["apps"][PREVIEW:]))
+             if len(movie["apps"]) > PREVIEW else ""),
             "<p>%d applications by %d people.</p>" % (len(movie["apps"]), movie["people"]),
             "<h3>Biggest disagreements, score() against the judge</h3>",
             table_html(["Tag", "score() rank", "Judge rank"], movie["gaps"]),
