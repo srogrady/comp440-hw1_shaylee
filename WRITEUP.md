@@ -223,17 +223,17 @@ Give these to Claude the way you gave it the rest. Graded on the catch and the c
 making Claude look good or bad.
 
 **A moment where Claude was wrong or overconfident, how you caught it, and where it
-happened. Name the part and the step, so the moment can be found:** XXXX
+happened. Name the part and the step, so the moment can be found:** nothing come sto mind for this one, but it did a really bad job at explaining questions for this assignment I struggled with a lot of the vocabulary of questions
 
-**One call where you overrode Claude, and why:** XXXX
+**One call where you overrode Claude, and why:** I overrode Claude sometimes when it would get super stuck on the wording of a question and i fully answered the entire question. I had to say it was close enough some times, but it would get stuck if it wasn't perfectly answered, which is helpful but also slightly annoying for opinion based answers or guessing answers
 
-**What you would hand to Claude sooner next time:** XXXX
+**What you would hand to Claude sooner next time:** reorganizing things in a list for me, it was really hard to re type things out perfectly in the order i wanted, so I had wished I could've told claude to do it for me with my help
 
-**Did Claude name the misleading tag in Part 2 step 1 before you did? What happened:** XXXX
+**Did Claude name the misleading tag in Part 2 step 1 before you did? What happened:** yes, it was helpful and couldve been something i missed so then i corrected for it
 
 **The figure. Would asking Claude "what does this show?" have produced your sentence, and what
-would have been missing from it:** XXXX
+would have been missing from it:** I don't think you would've produced my sentence, but what would have been misleading is that it would have only talked about the axes not the way the bars looks
 
-**Hours spent:** XXXX
+**Hours spent:** 7 hours
 
-**Anyone who helped you, or "no one":** XXXX
+**Anyone who helped you, or "no one":** no help
